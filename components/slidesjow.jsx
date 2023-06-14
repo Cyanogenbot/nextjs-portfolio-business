@@ -9,6 +9,17 @@ import { Box } from '@mui/material';
 
 
 const Welcome = () => {
+  const [videoQueue, setVideoQueue] = useState(['/videos/sphere.mp4', '/videos/polaris.mp4', '/videos/rideswipe.mp4']);
+  const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+  const videoRef = useRef(null);
+
+  const handleVideoEnded = () => {
+    // Move to the next video in the queue
+    setCurrentVideoIndex(prevIndex => (prevIndex + 1) % videoQueue.length);
+    // Play the next video
+    videoRef.current.play();
+  };
+
     return (
             <Paper elevation={3} sx={{ borderTopLeftRadius:0, borderTopRightRadius:0, justifyContent:"center",width:"100vw",height: "120vh", maxHeight:"112vh",  display:'flex', justifyContent:'flex-start'}}>
                 {/* <Image
@@ -21,16 +32,10 @@ const Welcome = () => {
   /> */}
   {/* <Box className={styles.blur} > */}
   
-      <video className={styles.video} loop autoPlay muted preload sx={{objectFit: "cover"}}>
-        <source
-          src="/videos/Demoday Video-1.mp4"
-          type="video/mp4"
-
-          
-        
-        />
-        Your browser does not support the video tag.
-      </video>
+    <video className={styles.video} loop autoPlay muted preload sx={{ objectFit: "cover" }} onEnded={handleVideoEnded} ref={videoRef}>
+      <source src={videoQueue[currentVideoIndex]} type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
 
   {/* </Box> */}
 {/* 
