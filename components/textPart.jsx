@@ -1,7 +1,6 @@
 import styles from '../styles/welcome.module.css'
 import Typography from '@mui/material/Typography'
 import Paper from '@mui/material/Paper'
-import wood from '../public/images/profile.jpg'
 import Image from 'next/image';
 import Container from '@mui/material/Container';
 import Card from '@mui/material/Card';
