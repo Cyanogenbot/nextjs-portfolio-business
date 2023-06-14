@@ -34,7 +34,7 @@ const Welcome = () => {
   /> */}
   {/* <Box className={styles.blur} > */}
   
-    <video className={styles.video} loop autoPlay muted preload sx={{ objectFit: "cover" }} onEnded={handleVideoEnded} ref={videoRef}>
+    <video className={styles.video} autoPlay muted preload sx={{ objectFit: "cover" }} onEnded={handleVideoEnded} ref={videoRef}>
       <source src={videoQueue[currentVideoIndex]} type="video/mp4" />
       Your browser does not support the video tag.
     </video>
