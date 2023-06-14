@@ -1,0 +1,27 @@
+.container {
+    min-width: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.video {
+    /* object-fit: cover; */
+    border-radius: 15px;
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto; */
+    height: 100%;
+    width: 100%;
+    /* height: 100vh; */
+    object-fit: cover;
+    /* position: fixed; */
+}
+
+
+/* 
+.blur {
+    filter: "blur(3px)";
+    width: "120vw";
+    margin: -10px;
+    transform: scale(1.1);
+} */

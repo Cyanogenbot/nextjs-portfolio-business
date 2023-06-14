@@ -1,0 +1,30 @@
+.name {
+    /* background-image: url('../public/images/profile.jpg'); */
+    /* height: 500px; */
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+    /* border-radius: 1rem; */
+}
+
+.container {
+    max-width: 36rem;
+    padding: 0 1rem;
+    margin: 3rem auto 6rem;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.backToHome {
+    margin: 3rem 0 0;
+}
+
+.Card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 3rem;
+}

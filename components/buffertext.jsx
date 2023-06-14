@@ -1,0 +1,15 @@
+import * as React from 'react';
+import Container from '@mui/material/Container';
+import Typography from '@mui/material/Typography';
+import utilStyles from '../styles/utils.module.css'
+
+export default function Buffertext(props) {
+  return (
+    <section className={utilStyles.headingMd}>
+    <Typography variant="h4" component="h3" color="white">
+{props.text}
+    </Typography>
+
+  </section>
+  );
+}

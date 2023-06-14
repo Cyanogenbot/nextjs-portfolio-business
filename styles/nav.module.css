@@ -1,0 +1,36 @@
+.nav {
+    height: auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav ul {
+    max-height: 175px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+.nav li {
+    align-items: center;
+}
+
+.nav ul li a {
+    margin: 20px 20px;
+}
+
+.nav h1 {
+    align-items: center;
+}
+
+.navHidden {
+    padding: 10px;
+    background-color: blueviolet;
+}
+
+.title {
+    color: #212121;
+}
