@@ -79,6 +79,11 @@ const cards = [
     description:<p>{"Polaris is a speculative design exploration into creating more awareness around power use through multimodal ambient interfaces. This design was created to help homeowners become more energy independent by helping them stay within their energy generation capacity. The polari can be attached to cables of appliances and monitor their powerdraw, incase too much power is drawn, they sonify their power use and guide homeowners to decide which appliances to turn off.       "}</p>
     },
     {
+        title: "Sjef",
+        URL: '/images/sjef.jpg',
+        description: <p>{"Sjef is aimed at supplying convenience. It does this by allowing the user to remotely control and monitor from elsewhere in the home. Sjef is connected to a smart pan/lid and as it collects information from the pan, it transfers this to the user. The body of Sjef starts shaking according to the boiling behavior in the pan. The transparent ball holds liquid that will start shaking and so bubbles indicate the boiling intensity. Sjef works together with Cherry for emergent phenomena"}</p>
+    },
+    {
     title: "Busy Town",
     URL: '/images/busytown.jpg',
     description:<p>{"Busy town is a research into creating more immersive toys by involving novel interaction technologies. Busy Town uses NFC to trigger sounds and visuals that match with their context. These toys can sense how fast they are going through NFC and adjust these effects accordingly. This research concluded that the contextual sound effects would help with immersion and play and entice exploration."}</p>
