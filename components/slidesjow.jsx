@@ -17,10 +17,13 @@ const Welcome = () => {
 
   const handleVideoEnded = () => {
     // Move to the next video in the queue
-    setCurrentVideoIndex(prevIndex => (prevIndex + 1) % videoQueue.length);
-    // Play the next video
-    videoRef.current.play();
+    setCurrentVideoIndex((prevIndex) => (prevIndex + 1) % videoQueue.length);
   };
+  
+  useEffect(() => {
+    // Play the next video when the current video index changes
+    videoRef.current.play();
+  }, [currentVideoIndex]);
 
     return (
             <Paper elevation={3} sx={{ borderTopLeftRadius:0, borderTopRightRadius:0, justifyContent:"center",width:"100vw",height: "120vh", maxHeight:"112vh",  display:'flex', justifyContent:'flex-start'}}>
