@@ -4,7 +4,9 @@ import Typography from '@mui/material/Typography'
 import Paper from '@mui/material/Paper'
 import Image from 'next/image';
 import { useSpring, animated,config } from 'react-spring'
-import React, { useState } from 'react'
+
+import React, { useState, useRef } from 'react';
+
 import { Box } from '@mui/material';
 
 
