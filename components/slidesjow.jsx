@@ -16,37 +16,27 @@ const Welcome = () => {
   const videoRef = useRef(null);
 
   const handleVideoEnded = () => {
-    // Move to the next video in the queue
     setCurrentVideoIndex((prevIndex) => (prevIndex + 1) % videoQueue.length);
   };
   
   useEffect(() => {
-    // Play the next video when the current video index changes
-    videoRef.current.play().catch((error) => {
-      // If there's an error playing the video, move to the next one
-      handleVideoEnded();
-    });
+    if (videoRef.current) {
+      videoRef.current.src = videoQueue[currentVideoIndex];
+      videoRef.current.load();
+      videoRef.current.play().catch((error) => {
+        // If there's an error playing the video, move to the next one
+        handleVideoEnded();
+      });
+    }
   }, [currentVideoIndex]);
-
-    return (
-            <Paper elevation={3} sx={{ borderTopLeftRadius:0, borderTopRightRadius:0, justifyContent:"center",width:"100vw",height: "120vh", maxHeight:"112vh",  display:'flex', justifyContent:'flex-start'}}>
-                {/* <Image
-    src="/images/frontpage.jpg" // Route of the image file
-    height={1080} // Desired size with correct aspect ratio
-    width={1920} // Desired size with correct aspect ratio
-    alt="Your Name"
-    filter= "blur(10px)"
   
-  /> */}
-  {/* <Box className={styles.blur} > */}
-  
-    <video className={styles.video} autoPlay muted preload sx={{ objectFit: "cover" }} onEnded={handleVideoEnded} ref={videoRef}>
-      <source src={videoQueue[currentVideoIndex]} type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-
-  {/* </Box> */}
-{/* 
+  return (
+    <Paper elevation={3} sx={{ borderTopLeftRadius: 0, borderTopRightRadius: 0, justifyContent: "center", width: "100vw", height: "120vh", maxHeight: "112vh", display: 'flex', justifyContent: 'flex-start' }}>
+      <video className={styles.video} autoPlay muted preload="auto" sx={{ objectFit: "cover" }} onEnded={handleVideoEnded} ref={videoRef}>
+        Your browser does not support the video tag.
+      </video>
+    </Paper>
+  );
                 <Container maxWidth="xl" filter= "blur(10px)" sx={{marginTop:120, position: "absolute",display:'flex', alignItems:'center'}}>
                     <Typography 
                     component="h1"
