@@ -17,7 +17,7 @@ import Skills from '../components/Skills'
 
 const identity = {
   title: "Design identity",
-  content :<><p>{"Hi, I'm Diede! I create rich IoT experiences that explore the boundaries of agency and autonomy. I am a speculative designer that likes to design product ecosystems, protocols and human computer interfaces within the subject of ubiqitous computing. I try to push the boundaries of human computer interactions by creating rich experiences that make us rethink how we interact with products and product systems"}</p></>,
+  content :<><p>{"Hi, I'm Diede! I create rich IoT experiences that explore the boundaries of agency and autonomy. I am a speculative designer that likes to design product ecosystems, protocols and human computer interfaces within the subject of ubiqitous computing. I try to push the boundaries of human computer interactions by creating rich experiences that make us rethink how we interact with products and product systems."}</p></>,
   image : "/images/me.jpg"
 }
 
