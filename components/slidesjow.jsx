@@ -22,7 +22,10 @@ const Welcome = () => {
   
   useEffect(() => {
     // Play the next video when the current video index changes
-    videoRef.current.play();
+    videoRef.current.play().catch((error) => {
+      // If there's an error playing the video, move to the next one
+      handleVideoEnded();
+    });
   }, [currentVideoIndex]);
 
     return (
