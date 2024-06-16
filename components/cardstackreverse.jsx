@@ -75,13 +75,13 @@ export default function Showcase(){
             <Grid container>
                 <Grid item>
                               
-                        <Typography component="h1" variant="h3" color="black" paddingTop = "5vw" paddingLeft="5vw" gutterBottom>
+                        <Typography component="h1" variant="h3" color="black" paddingTop = "2vw" paddingLeft="5vw" gutterBottom>
                             {cards[props.count].title}
                         </Typography>
            
                 </Grid>
                 <Grid item>     
-                    <Typography component="h3" variant="h7" color="black" paddingLeft="5vw" paddingRight="5vw" gutterBottom paragraph="true">
+                    <Typography component="h3" variant="h7" color="black" paddingLeft="5vw" paddingRight="5vw" paddingBottom="2vh" utterBottom paragraph="true">
                         {cards[props.count].description}
                     </Typography>
                 </Grid>
@@ -152,10 +152,10 @@ export default function Showcase(){
             </Grid> */}
             <Grid item xs={12} md={7}>
         
-            <Box sx={{ minHeight: "80vh", }}>
+            <Box sx={{minHeight:"60vh" }}>
             <Grid container spacing ={1}>
             <Grid item xs={12} md={5}>
-            <Container sx={{backgroundColor: 'background.dark', minHeight:"80vh", minWidth:"14vw", maxWidth: "90vw", justifyContent:"center"}}>
+            <Container sx={{backgroundColor: 'background.dark', minWidth:"14vw", maxWidth: "50vw",minHeight:"60vh" , justifyContent:"center"}}>
                             <Deck/>
             </Container>
                 </Grid>

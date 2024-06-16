@@ -17,20 +17,19 @@ import Skills from '../components/Skills'
 
 const identity = {
   title: "Design identity",
-  content :<><p>{"Hi, I'm Diede! I create rich IoT experiences that explore the boundaries of agency and autonomy. I am a speculative designer that likes to design product ecosystems, protocols and human computer interfaces within the subject of ubiqitous computing. I try to push the boundaries of human computer interactions by creating rich experiences that make us rethink how we interact with products and product systems."}</p></>,
+  content :<><p>{"As a maker at heart, as my interest lay in the field of 3D manufacturing, electronics, and programming. My peers known for my ability to turn a concept into an experience. This ability to turn concepts into reality makes it easier to evaluate the concepts and build forward on them. I also like to tinker around with novel technologies and open source projects in my spare time, an example of which is that I host and maintain my own digital services on my old computer which i turned into a server. Most of my thinking is done through my hands, as I express myself through, drawing, writing, coding and building."}</p><p>{"In my personal design process I delve deep into problems, often trying to get a complete overview of a situation or problem. This gives me an all encompassing overview of the issue and a design context to work in. By throroughly familiarising myself with the design space, I learn quickly, allowing me to involve and communicate with experts. Based on this design space I then try to see how technology could take a role in this situation and design a concept around this. Once a problem is turned into a concept my maker skillset allows me to iterate and quickly towards a final design. Combining the power of thoughtful concepts with quick realisation skills."}</p><p>{'When working together with other designers I take on the role of Creative Director. I try to preserve the overarching vision of the project, making sure the projects strong points are not lost and keeping alignment with concepts. My strength is in flexibility as I am not scared to pivot. I aim to inspire others in the design team to give input, and democratically tackle decisions, but I am not scared to go against the grain. Hence I believe a position like "Product Owner" would suit me well in the future.'}</p></>,
   image : "/images/me.jpg"
 }
 
 const vision = {
   title:"Vision on design",
-  content: <><p>{"Modern-day smart products are not made to be used by humans directly, rather they’re made to be used through smartphones. Activating appliances through a smartphone feels like a gimmick to most people. Virtual buttons might allow for easier connectivity solutions, but for me, they kill the immersion of living in a smart home by disconnecting me from the physical home. The smart home product I value the most in my own room is the simple smart light switch as it allows me to change my lights without having to use my phone. I think appliances should focus more on interacting in the physical ecosystem of the house, with the common goal of delivering a more humane and seamless experience to the end-user. Where some designers believe the future of design is in the metaverse, I think the future of design augment the real world. "}</p>
-   </>,
+  content: <><p>{'As a designer I am very critical of our neoliberal capitalist system where profits proceed people. Our society defines success by profitablity rather than impact, enabling practices such as surveillance capitalism, where new products are designed for the sake of collecting more data, rather than helping people. I believe designers could take a stance against this growth and efficiency centered approach to "innovation" by going the extra mile and design with the public good in mind.'}</p><p>{"An example of which can be found in designing around the internet. I believe the smart home itself resides in the users house, and not on an external cloud. This is because data protection often seems to be an afterthought in design, and sometimes even a business model. We have become the product ourselves in this capitalist society, where everyone want us to consume their products. Hence It has become more important than ever that our data is sovereign."}</p><p>{"As designers we should take social values such as privacy, sustainability and equality and innovate based these core values, rather than innovate for the sake of technology and growth. Applying the idea of privacy by design to other social contexts. Allowing for more disruptive changes to our world."}</p></>,
   image: "/images/opendevice.jpg",
 
 }
 
 const latestProject ={
-  title:"My final bachelors project",
+  title:"My final masters project",
   content: <><p>{"In the future, our houses will be smarter than ever. As novel smart home devices will start to lead their own lives, they might initiate actions just by sensing human presence. But how  do  we  as  humans  stay  in  control of these intelligent homes? Sphere is a design exploration on imposing presence sensing limits to our smart home devices. By pulling on sphere's string you can set a sphere of influence for appliances to respond to, so that these devices won’t  respond  to  your  presence  when you don’t want it to happen."}</p>
   </>,
   image: "/images/fbp.jpg",
@@ -47,6 +46,13 @@ const latestProject ={
 
 // }
 
+function logoIcon(props) {
+  return (
+    <SvgIcon {...props}>
+      <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />{" "}
+    </SvgIcon>
+  );
+}
 export default function Home() {
   return (
     <Layout home>
@@ -54,7 +60,8 @@ export default function Home() {
       <Slidesjow  sx={{width:"100vw"}}/>
 
       <div id="Identity"/>
-      <Buffertext text = "Hi I'm Diede! an industrial design student at the TU/e"/>
+      <logoIcon  color="white"/>
+      <Buffertext text = "Hi I'm Diede! an Industrial Design master student at the TU/e"/>
       <PIV title = {identity.title} content = {identity.content} image = {identity.image}/>
 
       <div id="Projects"/>

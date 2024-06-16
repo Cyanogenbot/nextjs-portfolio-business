@@ -6,7 +6,7 @@ import Container from '@mui/material/Container';
 import Card from '@mui/material/Card';
 export default function TextPart(props){
     return(
-    <Paper elevation={3} sx={{bgcolor: "#cfe8fc", height: "auto", minHeight:730,  display:'flex', justifyContent:'flex-start', margin:"2vw"}}>
+    <Paper elevation={3} sx={{bgcolor: "#cfe8fc", height: "auto",  display:'flex', justifyContent:'flex-start', margin:"2vw"}}>
         <Container maxWidth="xl"  sx={{margin:"3vw", position: "absolute",display:'flex', alignItems:'center'}}>
             <Typography 
             component="h1"

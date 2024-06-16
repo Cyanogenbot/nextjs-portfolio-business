@@ -76,22 +76,44 @@ const cards = [
     {
     title: "Polaris",
     URL: '/images/polaris.jpg',
-    description:<p>{"Polaris is a speculative design exploration into creating more awareness around power use through multimodal ambient interfaces. This design was created to help homeowners become more energy independent by helping them stay within their energy generation capacity. The polari can be attached to cables of appliances and monitor their powerdraw, incase too much power is drawn, they sonify their power use and guide homeowners to decide which appliances to turn off.       "}</p>
+    description:<p>{"Polaris is a speculative design exploration into creating more awareness around power use through multimodal ambient interfaces. This design was created to help homeowners become more energy independent by helping them stay within their energy generation capacity. The polari can be attached to cables of appliances and monitor their powerdraw, incase too much power is drawn, they sonify their power use and guide homeowners to decide which appliances to turn off."}<p></p>{"The polaris project was a tough lesson into teamwork. Whereas the group was always on good terms, we seemed to have trouble defining our project and would not make decisions. I personally learnt here that my flexibility can sometimes be confusing to my team. With the takeaway that I should take more care guiding others through my decision process so that everyone can be on board."}</p>
     },
     {
-        title: "Sjef",
-        URL: '/images/sjef.jpg',
-        description: <p>{"Sjef is aimed at supplying convenience. It does this by allowing the user to remotely control and monitor from elsewhere in the home. Sjef is connected to a smart pan/lid and as it collects information from the pan, it transfers this to the user. The body of Sjef starts shaking according to the boiling behavior in the pan. The transparent ball holds liquid that will start shaking and so bubbles indicate the boiling intensity. Sjef works together with Cherry for emergent phenomena"}</p>
+    title: "Sjef",
+    URL: '/images/sjef.jpg',
+    description: <p>{"Sjef is aimed at supplying convenience. It does this by allowing the user to remotely control and monitor from elsewhere in the home. Sjef is connected to a smart pan/lid and as it collects information from the pan, it transfers this to the user. The body of Sjef starts shaking according to the boiling behavior in the pan. The transparent ball holds liquid that will start shaking and so bubbles indicate the boiling intensity. Sjef works together with Cherry for emergent phenomena"}<p></p>{"This project was done for the course: Designerly Perspective on IoT, which taught us on how to design rich interaction products for growing systems. Putting the emphasis on combining multiple devicesto create an unifying experience. In this course I learnt to design from a holistic perspective, in which devices we're merely tools to support the entire experience."}</p>
     },
+    {
+    title: "Dare-to-Repair",
+    URL: '/images/daretorepair.png',
+    description:<p>{"We repair our products less and less, often enough we just throw an old or broken appliance away and replace it with a brand new unit. Extending the lifetime of an appliance could save us a lot of global warming potential. So the practice of repairing products could be very beneficial, but is often only done by enthusiasts, such enthusiasts can be found in for example Repair Cafés and hackerspaces. In this research we try to figure out what drives these enthusiasts in the repair process and how we can propagate this message to the rest of the world. The approach taken to do this is by trying to enhance the repair cafe experience through a clearer integration of creativity."}<p></p>{"In the dare to repair project, I learnt that design research could also be fun, as in my bachelor I did not quite understand the purpose of design research. As a maker, I am not too keen on writing reports and papers, but in this project I found my explorative approach to research."}</p>
+    },
+    {
+    title: "Interactional Morality",
+    URL: '/images/daretorepair.png',
+    description:<p>{"In the interactional morality course, I learnt a lot on societal problems surrounding equality and ethics. In The course we would learn about these problems and were trained into writing powerfull manifesto in a designerly manner. For me this course was quite an eye-opener as I always felt troubled expressing myself when it came to societal problems. This course did not only teach me on the complexity of these problems, but also trained be on how to make better arguments. This course helped me to understand the impact of design and technology on pressing social issues and allowed me intergrate the expertise area of user & society into my future projects"}</p>
+    },  
+  
     {
     title: "Busy Town",
     URL: '/images/busytown.jpg',
-    description:<p>{"Busy town is a research into creating more immersive toys by involving novel interaction technologies. Busy Town uses NFC to trigger sounds and visuals that match with their context. These toys can sense how fast they are going through NFC and adjust these effects accordingly. This research concluded that the contextual sound effects would help with immersion and play and entice exploration."}</p>
+    description:<p>{"Busy town is a research into creating more immersive toys by involving novel interaction technologies. Busy Town uses NFC to trigger sounds and visuals that match with their context. These toys can sense how fast they are going through NFC and adjust these effects accordingly. This research concluded that the contextual sound effects would help with immersion and play and entice exploration."}<p></p>{"This project was created for the course Designing User Interfaces using Emerging Technologies. In this course we learned how to explore the potential of new technologies. In this course I primarily learnt how to use technologies to demonstrate or mock-up interactions. Giving me an edge at effective prototyping."}</p>
     },  
     {
     title: "Sensebox",
     URL: '/images/Sensebox.jpg',
-    description:<p>{"The Sensebox is a research into creating hybrid digital physical tools to improve worldbuilding practices during scenario creation. The research builds forward on previous sandbox like interfaces and tries to embed a digital layer to improve home contextualisation. It does this by giving students an overview of the house and the necessary tools to modify this to suit the worlds they're creating."}</p>
+    description:<p>{"The Sensebox is a research into creating hybrid digital physical tools to improve worldbuilding practices during scenario creation. The research builds forward on previous sandbox like interfaces and tries to embed a digital layer to improve home contextualisation. It does this by giving students an overview of the house and the necessary tools to modify this to suit the worlds they're creating."}<p></p>{"In the IoT sensebox project, I put the explorative research strategy learnt in the dare-to-repair project, to good use. This project would be a collaborative explorative study together with Teun Schutten, in which we explored adding additional modalities to the IoT sandbox. Here I used my Technology & Realisation and Math Data & Computing skills to create a new alternative sandbox, to measure the impact of the new modalities on storytelling."}</p>
+    },
+    
+    {
+    title: "Stekkie",
+    URL: '/images/Stekkie.jpg',
+    description:<p>{"Stekkie looks into the development process of an adaptive charging solution to promote sustainable behaviour and balance the grid by focusing on individual households. This is done with the goal of making vehicle-to-grid charging more transparent. It does this by exploring various approaches to a digital twin model for this adaptive charger and its accompanying interface. Multiple interfaces were created alongside digital infrastructure and explorations of machine learning learning models. Forming our final design STEKKIE."}<p></p>{"Stekkie was the first course in which I tried to intergrate my moral judgements learnt in interactional morality into a design project. The course Designing with and for digital twins focussed on a data-driven design perspective in which machine learning and data gathering stood central. As a person with moral obligations against AI and excessive data collection, I tried to intergrate a more transparent approach to machine learning. I did this by creating an interface that would not only show AI suggestions, but also the data on which the AI based its recommendations."}</p>
+    },     
+    {
+    title: "Claude",
+    URL: '/images/Claude.jpg',
+    description:<p>{"We are dependent on big tech companies. Day in day out we are using services by Microsoft, Google, Meta, Apple, and Amazon. While we have to use their services to live our comfortable western lifestyle, they have perfected creating intricate digital profiles which are sold to the highest bidder. These profiles are so detailed, that these companies can almost assure their clients they can nudge your behavior, Influence what you buy or determine an entire election. And we don't seem to have a choice. The Claude project reshapes the future of the home servers by adapting them to suit the decentralized internet, putting privacy at center. This is done by drawing inspiration from the self-hosting community, a community of people that have been developing and hosting free and open-sources alternatives to big tech companies. Claude consists of personal little clouds that can be hosted at home, making it possible to store data at home, and a wallet to gain access to these servers. Making private file sharing, texting, streaming and much more possible, without have to rely on third parties. Giving back control to the the people who want to preserve their privacy in the digital future."}</p>
     },  
     {
     title: "Project Cards",
@@ -99,6 +121,7 @@ const cards = [
     description:<p>{"To see my projects, click and drag the cards off the screen!"}</p>
     },
 ]
+
 
 
 const to = i => ({ x: 0, y: i * -4, scale: 1, rot: -10 + Math.random() * 20, delay: i * 100 })
@@ -191,13 +214,13 @@ export default function Showcase(){
     // Create a gesture, we're interested in down-state, delta (current-pos - click-pos), direction and velocity
     return(
         <Paper elevation={3} sx={{bgcolor: "background.cards", margin:"2vw"}} >
-            <Box sx={{display: "flex", minHeight: "80vh", }}>
+            <Box sx={{display: "flex", minHeight: "50vh", }}>
                 <Grid container spacing ={12}>
                     <Grid item xs={12} md={7}  >
                             <Description count={likes}/>
                     </Grid>
                     <Grid item xs={12} md={5} justifyContent= "flex-end">
-                        <Container sx={{marginTop:"4vh",backgroundColor: 'background.dark', minHeight:"80vh", minWidth:"15vw", justifyContent:"center"}}>
+                        <Container sx={{marginTop:"4vh",backgroundColor: 'background.dark', minWidth:"15vw", justifyContent:"center"}}>
                             <Deck/>
                         </Container>
                     </Grid>
