@@ -28,6 +28,13 @@ const vision = {
 
 }
 
+const development = {
+  title:"Development",
+  content: <><p>{'ddgfsdfjghdfjklghdddlghjksdlgkhjdfshjksdfg'}</p></>,
+  image: "/images/opendevice.jpg",
+
+}
+
 const latestProject ={
   title:"My final masters project",
   content: <><p>{"In the future, our houses will be smarter than ever. As novel smart home devices will start to lead their own lives, they might initiate actions just by sensing human presence. But how  do  we  as  humans  stay  in  control of these intelligent homes? Sphere is a design exploration on imposing presence sensing limits to our smart home devices. By pulling on sphere's string you can set a sphere of influence for appliances to respond to, so that these devices won’t  respond  to  your  presence  when you don’t want it to happen."}</p>
@@ -68,12 +75,13 @@ export default function Home() {
       <Buffertext id ="Projects" text= "But what do you do?"/>
       <Deck/>
       <PIVMirror3 title = {latestProject.title} content = {latestProject.content} image = {latestProject.image} image2 = {latestProject.image2} image3 = {latestProject.image3}/>
+      <PIV title ={development.title} content = {development.content} image ={development.image}/>
       <div id="root"></div>
 
 
       <Buffertext text = "How do you see the future?"/>
       <div id="Vision"/>
-      <PIV title = {vision.title} content = {vision.content} image = {vision.image}/>
+      <PIVMirror title = {vision.title} content = {vision.content} image = {vision.image}/>
 
       <div id="Development"/>
       <Buffertext text = "So how did I develop?"/>
