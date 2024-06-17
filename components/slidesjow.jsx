@@ -25,8 +25,9 @@ const Welcome = () => {
     '/videos/Ringringremakeh264.mp4',
     '/videos/rideswipe.mp4',
     '/videos/polaris.mp4',
-    '/videos/sphere.mp4',
     '/videos/sjef.mp4',
+    '/videos/sphere.mp4',
+    
   ]);
 
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
