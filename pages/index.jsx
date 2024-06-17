@@ -7,6 +7,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography'
 import PIV from '../components/textSection'
 import PIVMirror from '../components/textSectionMirror'
+import PIV3 from '../components/textSection3'
 import PIVMirror3 from '../components/textSectionMirror3'
 import Buffer from '../components/buffer'
 import Buffertext from '../components/buffertext'
@@ -30,28 +31,30 @@ const vision = {
 
 const development = {
   title:"Development",
-  content: <><p>{'ddgfsdfjghdfjklghdddlghjksdlgkhjdfshjksdfg'}</p></>,
+  content: <><p>{'During my master I developed myself on various fronts. When I finished the industrial design bachelor I was a designer who designed technology-centric solutions to problems. My designs used to be based on a simple concept and I would spend a lot of time to realize and build this actual solution. Because I would spend so much time on the Technology and Realisation behind my designs, I would often forget to elaborate on the bigger picture behind my designs. This meant that I had trouble communicating what would be interesting about my designs, and could not reflect on its societal relevance. My designs would often be too complicated to explain to users, making it difficult to validate. '}</p><p>{'Throughout my master I learnt that this societal relevance and bigger picture was much more important than the execution of the project. I learnt this through courses like Designerly Perspective on IoT and Sound of Smart things, which focussed on creating more holistic and narrative based designs and Interactional Morality which emphasized the importance of societal relevance and moral problems.'}</p><p>{'Additionally I underwent a shift in the way I would realize my projects. Instead of trying to get the designs to work, I would use the same skills more effectively prototype by trying to emulate the entire experience instead. In the course Designing User Interface using Emerging Technologies I would discover valuable prototyping methods that made it easier for me to build reliable and immersive experiences and spent more time working with external stakeholders and stakeholders, to get deeper insights into the design context and play with new ideas and contexts'}</p><p>{'For the research projects I often took a more explorative stance where my making skills would come to good use. I would focus on making interesting research artifacts with novel technologies, and instead of validating these artifacts, would use them to figure out more specific problems like: would the sense box improve story and world building or can a more creative approach to a repair café make repair more prevalent. Especially when it comes to academic writing I have improved a lot already, as I do admit writing is still not my strength, it certainly has become less of a bottleneck in my projects'}</p><p>{'Together this made me change from a product designer towards a more strategic design who does not just value the execution of a project but also the conceptual aspects of a design. I now allow myself to express my vision on complex societal problems, and use these as basis for my designs so I can have my little impact on the world.'}</p></>,
   image: "/images/opendevice.jpg",
-
 }
 
 const latestProject ={
-  title:"My final masters project",
-  content: <><p>{"In the future, our houses will be smarter than ever. As novel smart home devices will start to lead their own lives, they might initiate actions just by sensing human presence. But how  do  we  as  humans  stay  in  control of these intelligent homes? Sphere is a design exploration on imposing presence sensing limits to our smart home devices. By pulling on sphere's string you can set a sphere of influence for appliances to respond to, so that these devices won’t  respond  to  your  presence  when you don’t want it to happen."}</p>
+  title:"Final masters project",
+  content: <>
+  <p>{"We are dependent on big tech companies. Day in day out we are using services by Microsoft, Google, Meta, Apple, and Amazon. While we have to use their services to live our comfortable western lifestyle, they have perfected creating intricate digital profiles which are sold to the highest bidder. These profiles are so detailed, that these companies can almost assure their clients they can nudge your behavior, Influence what you buy or determine an entire election. And we don't seem to have a choicee"}</p>
+  
+  <p>{"The Claude project reshapes the future of the home server by adapting it to suit the decentralized internet, putting privacy at center. This is done by drawing inspiration from the self-hosting community, a community of people that have been developing and hosting alternatives to big tech companies. Claude creates personal little clouds that can be hosted at home. Giving back control into the hands of the people who want to preserve their digital privacy through data-sovereignty. This is done through 2 co-creation session to figure out how users would envision a personal home server. After which an auto-ethnographic study into the architecture of home severs results into a concept. This concept is then refined and validated with six experts and five students. The concept consists of two elements, the Claude portal; a home server on which users can store and share their data and the Claude wallet; a key wallet to manage access to your or your friends' their servers."}
+  </p>
   </>,
-  image: "/images/fbp.jpg",
-  image2: "/images/systemdraw.jpg",
-  image3: "/images/exploration.jpg", 
+  image: "/images/claude.jpg",
+  image2: "/images/claudeApp.png",
+  image3: "/images/claudedev.jpg", 
   
 }
-// const future={
-//   title:"My future plans",
-//   content: <><p>{"For the future I want to do a master’s in industrial design and specifically in the field of Computer Human Interaction. The overlap between psychology and the integration of often intrusive technologies is a field that interests me a lot. I to keep on exploring this within the field of smart homes but I am not quite sure about this. The reason smart homes are a subject that interests me a lot is that I think that homes are the battlefield of directing technologies and the values of their inhabitants. I want to do this here in Eindhoven as Eindhoven is still one of the better design studies when it comes to Computer Human Interaction, but I do aspire to do an exchange to Carnegie Melon University at some point as a lot of their graduate projects entice me. Attending another university will also allow me to see another perspective on design which will be valuable in exploring my identity and vision. How I want to develop on the expertise area’s is still unclear to me. This, however, might be a positive sign about my previous development and allows me to jump into my future education freshly. "}</p>
-//   <p>{" As for my next project I want to create my own 3D printer during the summer, I noticed that I liked working on and with my 3D printer in my spare time and want to take the next step in this hobby. Most parts are ordered already and now it’s a matter of time to assemble the machine. I want to get higher quality prints in less time to make my rapid prototyping workflow even more rapid. To do this I’m creating my own iteration of the VZBot open-source project. Building this 3D printer, myself will allow me to create a 3D printer that fits my personal workflow better, give me more insight into additive manufacturing and printer kinematics which I can hopefully use in my future projects! "}</p> 
-//   </>,
-//   image: "/images/printer.jpg"
+const future={
+  title:"My future plans",
+  content: <><p>{"For the future I still have lots of choices to make, as I have no clear idea of what I want to do yet. I am not sure whether staying in academics would fit me, as eventhough I have gotten better at writing, I still do not feel comfortable writing papers. Hence I am not thinking of continuing this path. Perhaps if I can find a spot within academia in which I can be more explorative, I might re-evaluate this decision. I feel like I am not quite ready to begin working for a company yet, as I am quite young, but the job searching will start. When I ended the bachelors I set my goal to work at a big tech company such as Google or Apple, as these companies would alwys be on the forefront of innovation. However I think my perception on these companies has changed a lot, not only do I not agree with their perception on privacy, but these companies regularily have mass lay-offs and are not reliable employers. When it comes to searching for a job, I would love to look for a position such as product owner or creative technology at a company with additional public interest. Examples of which could be companies like fairphone, Nextcloud or Nabu Casa, as I think these companies could offer me additonal perspectives to the designing process, all within the context of communities I already partake in. Another option would be getting a position at a small digital service design studio like Bureau Moeilijke Dingen where I can work on a variety of projects. By exploring different kind of jobs, I might find what kind of company I truly want to work at."}</p> 
+  </>,
+  image: "/images/printer.jpg"
 
-// }
+}
 
 function logoIcon(props) {
   return (
@@ -72,10 +75,12 @@ export default function Home() {
       <PIV title = {identity.title} content = {identity.content} image = {identity.image}/>
 
       <div id="Projects"/>
-      <Buffertext id ="Projects" text= "But what do you do?"/>
+      <Buffertext id ="Projects" text= "What do you do?"/>
       <Deck/>
       <PIVMirror3 title = {latestProject.title} content = {latestProject.content} image = {latestProject.image} image2 = {latestProject.image2} image3 = {latestProject.image3}/>
-      <PIV title ={development.title} content = {development.content} image ={development.image}/>
+      
+      <Buffertext id ="Projects" text= "How did this impact you as a designer?"/>
+      <PIV3 title ={development.title} content = {development.content} image ={development.image}/>
       <div id="root"></div>
 
 
@@ -88,9 +93,9 @@ export default function Home() {
       <DeckReverse/>
       <Skills/>
     
-      {/* <Buffertext text = "Where is the future headed?"/> */}
+      <Buffertext text = "Where is the future headed?"/>
       <div id="Future"/>
-      {/* <PIVMirror title = {future.title} content = {future.content} image = {future.image}/> */}
+      <PIVMirror title = {future.title} content = {future.content} image = {future.image}/>
 
       <Bufferlink text = "Want to be part of my future? Contact me!" link = "mailto: contact@designedbydie.de"/>
     </Layout>

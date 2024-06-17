@@ -16,37 +16,51 @@ const cards = [
     {
     title: "Creativity & Aesthetics", 
     URL:"/images/C&A.jpg",
-    description:<> <p>{"I feel that I have become quite proficient in the exploratory process I enjoy using exploratory prototyping methods to come up with new concepts. For example, through drawing, Modeling, Rapid prototyping and coding. By being able to confidently prototype, exploring new areas becomes easier and a lot more fun to figure out. This allows me to come up with ideas that have more depth to them. "} </p>
-    <p>{"I do not solely use prototyping to come up with ideas as I also try to involve other designers in the process through cocreation sessions for example. This is important to me as sometimes I will get stuck in my own design process and knowing how to involve others can be super valuable, even if it is just a way to gain inspiration. "} </p>
-    <p>{"I balanced the software first approach of my FBP out with the more creativity and aesthetics focused second half of the semester. In which the hardware and interaction aspect became more relevant. In this second half I spent more time looking at creating a more interest-ing interaction by combining skills such as drawing, the cocreation session, and ideation through methods from literature to figure out what direction I could go with the interaction. Trying out these different techniques allowed me to elaborate on the design and create a more in-depth experience. "} </p>
-   s</>
+    description:<> <p>{"I feel like Creativity and Aesthetics is the expertise area in which I have grown the least. I noticed that my creative process is mainly based on intuition, and that has stayed that way. During the bachelors I would often force myself to work through more structured methods, trying to enforce notetaking and keeping track of metrics. However I have learnt this structured approach just does not work for me, as I would often have trouble expressing myself through words and had trouble turning these acts into routines. Therefore started to embrace my chaotic approach to design, by letting this structure go and put more emphasis on expression and reflection. I have learnt to adapt my process by spending more time on communicating and explaining my intuition. Especially during my M1.1 project Polaris, I have grown a lot in communication by learning how to explain my process. Sometimes this would take shape of mood boards whereas other times it would require me to do lo-fidelity prototyping. Enabling my expression through my maker skills."} </p>
+        </>
     },
     
     {
     title: "Business & Entrepreneurship", 
     URL:"/images/B&E.jpg",
-    description:<><p>{"The same counts for the Expertise area of Business and Entrepreneurship, in most projects this expertise area turned out to be an afterthought and usually would have meant to make a business canvas of how the final product would be marketed. Because I worked on the business aspect of this project from the start through the Course Design Innovation Methods, I think the ecosystem approach of thinking of design has stuck as a motive to this project and a small tool for ideation. This expertise area is one I only recently started developing as I wasn’t quite sure about its placement. I feel like this expertise area is an area I’m quite good at but does not feel challenging to me. I think this is the case because I’m relatively good at looking for opportunities due to my varying interests and my different look on things, but do not quite understand what is more to this expertise area. "} </p>
-    <p>{"I do think looking at a problem from a more systematic view allows us designers to look at more effective approaches to tackle problems, for which analyzing existing businesses can help us spot more unconventional solutions. The canvasses such as the problem solution fit canvas and value proposition canvas make me think more elaborately about my designs and how these fit the market. Which allows me to create more effective designs. "} </p></>
+    description:<><p>{"Entrepreneur ship was about finding a target group, and being able to design a product that caters to them, while figuring out a way of monetisation. "} </p>
+
+    <p>{"I have gotten more aware that monetisation can deeply impact the quality and values of a service. Societal values and profitability often do not go hand-in-hand. When designing for privacy and sustainability, conventional business models such as selling data to advertisers or planned obsolescence are not possible anymore. In the Claude project this meant I had to think of a more creative approach to funding that would not clash with the product values, namely providing external back-ups as main source of income."} </p>
+    
+    <p>{"Especially in the second half of my masters, during my final master project, but also during my project at TSG, I tried to involve experts and stakeholders throughout the entire process. At TSG I would talk to stakeholders within the company about their views on the internal structure of TSG. This input was then used to get a better view of the internal way of working and potential points of friction. Within my FMP I would involve external experts to validate my thoughts or ask for their guidance, something I did not dare to do during my bachelors. "} </p>
+    </>
     },
     {
     title: "User & Society", 
     URL:'/images/usertest.jpg',
-    description:<><p>{"At the beginning of the bachelor I didn’t quite understand the purpose of this expertise area, I wasn’t quite sure how something could not be user centered but after the course User Centered Design, this idea changed, in smart homes I noticed that many devices we’re created with a technology first approach. Often enough products bring along gimmicks just for the sake to be able to market that a certain technology is used. I do not want to design products that way, I personally prefer creating products that fit out daily workflows, and if they do not fit my workflow, I’ll make sure they will fit that workflow according to my maximizer mindset. "} </p>
-    <p>{"To do this user involvement is important, but how I could incorporate users was a challenge for me, in my first two products this was something to tick off on the project requirements list. In project 3 I started to understand what insights users could give in to a product, this not only gave me the opportunity see what problems others cope with, but also allowed to see what other people’s perspectives are on problems that I face. "} </p>
-    <p>{"At first, I wanted to a cocreation session earlier in the design process just to have ticked the box of User and Society, however the way I ended up executing the cocreation later in the design process posed way more valuable than I would’ve thought. Not only helped the cocreation session with getting a better view of what people would want from such a system, it would also help me with gaining more creative ideas and approaches in a time I built up a tunnel vision. "} </p></>
+    description:<><p>{"In my bachelors I would often forget the society aspect of this expertise area, during my master this was a major area of development for me. Especially through the course Interactional Morality I started to realise the importance of positioning a design within a societal context. As a person I am quite opinionated, but often these would be kept to myself. This course helped me discover how I could express these opinions in a non verbal way through design, similarly to the bachelors course, perspectives on aesthetics."} </p>
+
+    <p>{"Whereas I have always had the urge to tackle societal problems such as sustainability, This would often come as an additional value. In my bachelors this meant that I would design something first, and then make it sustainable. This would lead to paradoxical designs that we're inherently unsustainable but executed Sustainably, essentially commodifying sustainability. I learnt that to tackle societal problems, you have to address these problems throughout the entire development cycle. This way sustainable values will not only be embedded in the design but also reflected by the concept. This approach aligns with the idea of privacy by design, which tries to embed privacy throughout the entire process instead of making a concept private."} </p>
+    
+    <p>{"Not only did I discuss privacy in the Claude project, as my project also looked into further ethical explorations caused by private sharing and communication. Namely the complex topic of CASM, and the distribution of illegal files. As I have talked with two experts on this topic to figure out how I could take a stance."} </p>
+    </>
     },
     {
     title: "Technology & Realisation", 
     URL:"/images/T&R.jpg",
-    description:<> <p>{"Technology and Realization was the expertise area that bound this project together, this expertise area allowed me to not only try out concepts that I had created, but it also let me see how I can use existing technologies in a different context and purpose. I used my library of skills and expertise to be able to spot opportunities for certain technologies. This skill allowed me to help my peers often too as they would ask me for my advice in this field. Through being relatively quick in realization I was able to iterate quickly and gain more depth in my designs. "} </p>
-    <p>{"As a kid I always liked arts and craft, but I did not have any particular skills in realization other than digital illustration before I did this degree. During this bachelor I gained many new skills, which range from 3D modeling and printing to exploratory sketching with markers. To me expanding this toolbox of skills to work with different electronics, materials and platforms is very important. This toolbox not only helps me in my ideation and realization process, but it also allows me to communicate with professionals in the field. This gives me a lot of autonomy in the design process and allows me to worry more about the execution of the concept rather than how I will realize it. "} </p>
+    description:<>
+    <p>{"Technology and realisation is one of my two main expertise area's. I see technology and realisation as the expertise area that defines the skillset of turning a design from a concept into reality and all the exploration steps in-between. As an exploration driven designer this is the skillset I am most comfortable designing with. This expertise area I am constantly developing myself by keeping myself up-to-date with all the new trends in the maker community. But during my masters there was a noticeable shift from how I tackled the realisation process during design projects. Where before I put all my effort in this expertise area, I have learnt to apply it more effectively and involve more help. Allowing me to become a more a versatile designer."} </p>
+
+    <p>{"In my bachelor I wanted my final designs to be fully functional devices, I had realised that I was spending lots of time and effort figuring out how I was going to implement the technology, All of which could have been spend on other aspects of my projects. During the master I learnt that getting the right message across is more important than whether the design actually works or not. communicating the design properly allows me to validate and get valuable input on my designs instead. This input can then be used to refine the concept, allowing me to iterate on the concept more rather than just the final design. Hence I started to pivot my realisation skills towards creating immersive mock-ups that simulated the experience of using the product. Claude is a prime example of this as it would showcase the entire self-hosting experience, without the need of complex coding. as During the course designing user interfaces using emerging technologies I discovered this technique of making a microcontroller emulate a Bluetooth keyboard, making connected prototypes easier and more reliable."} </p>
+
+    <p>{"Additionally I have been taking more advantage of my network. Instead of doing everything myself and limiting my design by my existing skillsets, by finding the right people to help with complex projects. An example of which is Claude's sheet steel casing, as I was not comfortable and familiar with the sheet steel bending process. By reaching out to experts and was given the idea to laser a flat piece of steel and then bend the steel through a mould. These experts gave me advice on how to create this mould, and with a little courage, I was able to create a steel prototype within 2 weeks without any prior experience. The mould was made with various stacked laser cut-outs."} </p>
+
    </>
     },
     {
     title: "Math, Data & Computing", 
     URL:"/images/MDC2.png",
-    description:<> <p>{"Even though I didn’t have any coding experience before starting this bachelor, I was one of the few students that understood what they we’re doing during the Creative Programming course, and I noticed I had quite some programming talent so to say. I started off in processing, but after I understood how that worked, learning other new languages was a breeze. This shows in this but also my previous portfolio that we’re coded by me. Having programming skills allows me to create things for the digital age, without being limited by the features of more user-friendly programs. More than often already existing programs limit my creativity as they are generally restrictive but being able to make stuff myself allows me to bypass these restrictions and reach my goals. Whereas my connected dog feed would connect to my google home through a premade service, my more recent prototypes could connect to home assistant directly! "} </p>
-    <p>{"During my FBP, I primarily improved myself on making use of math and functions inside my design process, in my final bachelors reporte I analyze and explain geofencing through functional logic. This allows me to explain the systems behavior in an understandable way. This gave my project a software and data first approach during the first half of the semester. I think this can be perceived as a positive approach to design as it allows me to look from a more systematic view on the technology in the house. On top of that thinking about how products could collaborate with each other allows for more elaborate interactions "} </p>
+    description:<> 
+    <p>{"In the past, Math, Data & computing would mean programming and the integration of algorithms to me. Whereas I still consider programming a valuable design tool, This expertise area has grown to mean much more to me. In my bachelor I already experimented with networking and getting my prototypes to work through the internet. In my masters this became a core aspect to my designs. In my free time I started to spent more time looking into connectivity and networking, which in the second half of the master truly came to fruition in the Claude project, which utilised my newly acquired knowledge on networking to fight for our right to privacy."} </p>
+
+    <p>{"During the master I have done several courses on the integration of machine learning. Whereas I do see these technologies as valuable tools to make smarter and more adaptive projects, I have also become more sceptical on the role of data and AI in our future. My thorough understanding of AI through courses like Designing with and for digital twins and embodying intelligent behaviour, combined with my growth in User and Society, made me aware that our techno-optimistic approach to design could also be harmful to society, for example when it comes to privacy."} </p>
+    
+    <p>{"Through embedding privacy by design in my final master project, I learnt that embedding privacy into a project is much more than storing data at home. Privacy also influences our sharing behaviour and what data or metadata is exposed on the internet. In the Claude project I created a decentralised storage and filesharing system. This not only allowed me to learn about internet security but also about how the data architecture of a project can influence privacy. Claude generally applied two approaches to privacy by design, Hiding; by storing data away from external companies and Minimalize; by making sharing possible without having to exchange personal identifiers. "} </p>
     </>
     },
 ]
@@ -144,31 +158,36 @@ export default function Showcase(){
 
   
     // Create a gesture, we're interested in down-state, delta (current-pos - click-pos), direction and velocity
-    return(
-        <Paper elevation={3} sx={{bgcolor: "background.cards", margin:"2vw"}} >
+    return (
+      <Paper elevation={3} sx={{ bgcolor: "background.cards", margin: "2vw" }}>
         {/* <Grid container spacing={0.5}> */}
-            {/* <Grid item xs={12} md={1}>
+        {/* <Grid item xs={12} md={1}>
                 <Skills/>
             </Grid> */}
-            <Grid item xs={12} md={7}>
-        
-            <Box sx={{minHeight:"60vh" }}>
-            <Grid container spacing ={1}>
-            <Grid item xs={12} md={5}>
-            <Container sx={{backgroundColor: 'background.dark', minWidth:"14vw", maxWidth: "50vw",minHeight:"60vh" , justifyContent:"center"}}>
-                            <Deck/>
-            </Container>
-                </Grid>
-                <Grid item xs={12} md={7} justifyContent= "flex-start">
-                        <Description count={likes}/>
-                </Grid>
-
+        <Grid item xs={12} md={7}>
+          <Box sx={{ minHeight: "60em" }}>
+            <Grid container spacing={1}>
+              <Grid item xs={12} md={5}>
+                <Container
+                  sx={{
+                    backgroundColor: "background.dark",
+                    minWidth: "14vw",
+                    maxWidth: "50vw",
+                    minHeight: "60em",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Deck />
+                </Container>
+              </Grid>
+              <Grid item xs={12} md={7} justifyContent="flex-start">
+                <Description count={likes} />
+              </Grid>
             </Grid>
-            </Box>
-        
-        {/* </Grid> */}
+          </Box>
 
+          {/* </Grid> */}
         </Grid>
-        </Paper>
-    )
+      </Paper>
+    );
 }

@@ -7,7 +7,7 @@ import Card from '@mui/material/Card';
 export default function TextPart(props){
     return(
     <Paper elevation={3} sx={{bgcolor: "#cfe8fc", height: "auto",  display:'flex', justifyContent:'flex-start', margin:"2vw"}}>
-        <Container maxWidth="xl"  sx={{margin:"3vw", position: "absolute",display:'flex', alignItems:'center'}}>
+        <Container maxWidth="xxl"  sx={{margin:"3vw", position: "absolute",display:'flex', alignItems:'center'}}>
             <Typography 
             component="h1"
             variant="h3"
@@ -18,8 +18,8 @@ export default function TextPart(props){
                {props.title}
             </Typography>
         </Container>
-        <Card maxWidth="xl"  sx={{bgcolor: "background.cards", marginTop:"12vw",display:'flex'}}>
-            <Typography sx={{ m: 4}} component="h3" variant="h7" color="background.main" paragraph={true}
+        <Card maxWidth="xl"  sx={{bgcolor: "background.cards", marginTop:"10vw",display:'flex'}}>
+            <Typography sx={{ m: "4vw" }} component="h3" variant="h6" color="background.main" paragraph={true}
              
             >
               {props.content}

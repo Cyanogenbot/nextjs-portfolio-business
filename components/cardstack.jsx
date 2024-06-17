@@ -20,49 +20,49 @@ const cards = [
     <p>{"For the portfolio text I was able to learn how to reflect better on my work. Especially now most projects have age, it was easier to see the real purpose of certain courses within the bigger picture of the bachelor. This helped me create a better view on personal development through the years, and what my design motives are."} </p>
     </> },
     {
-    title: "Digital Craftmanship",
+    title: "Digital Craftmanship (Bachelor)",
     URL: '/images/DCmask.png',
     description: <> <p>{"For this course we created mouth masks that were generated through code. Our code would cut up several pictures and glue them back together. The result is a pdf that can be printed on transfer paper and transferred on to a fabric stencil for a mouth mask. This process makes for a simple way to create a personalised moutmasks in an accesible manner"}</p>
    </>
     },
     {
-    title: "Aesthetics of Interaction",
+    title: "Aesthetics of Interaction (Bachelor)",
     URL: '/images/AoI.jpg',
     description: <> <p>{" In the course Aesthetics of Interactions we created waking up experience for more mystical user group. This involved us taking aspects seen in mystical communities and trying to utilize these to enrich their waking up experience. We ended up creating an alarm clock based of a singing bowl, which would start singing once hit, this was paired together with a fog maker to create some more mysticality. The creation of this device helped me see the significance of creating an interaction past the graphical user interfaces. "} </p>
    </>
     },
     {
-    title: "Radical toys",
+    title: "Radical toys (Bachelor)",
     URL: '/images/sociobear.jpg',
     description:<> <p>{"Socio cultural design was my first elective during this bachelor, in this elective we did several mini projects about addressing societal problems and inclusion within design. One of these projects was an exhibition in which we would address gender marketing within toys. With the goal of starting a debate about the matter. Tried to evoke questions such as: Does gender marketing reinforce gender stereotypes. And what if kids don’t like the toys aimed at the opposite gender? This course mainly helped me think about looking at problems from different perspectives and designing for debate. "} </p></>
     },
     {
-    title: "Bubbles",
+    title: "Bubbles (Bachelor)",
     URL: '/images/PoA.jpeg',
-    description: <> <p>{"We developed headgear through which we wanted to make people aware of the bubbles they are in, Physical bubbles were created to resemble different backgrounds and ideas. By looking through these bubbles we become more aware of our actions, but watch out as these bubbles might start blocking your vision"} </p>
+    description: <> <p>{"For the course Perspetives on Aesthetics, we developed headgear through which we wanted to make people aware of the bubbles they are in, Physical bubbles were created to resemble different backgrounds and ideas. By looking through these bubbles we become more aware of our actions, but watch out as these bubbles might start blocking your vision"} </p>
    </>
     },  
     {
-    title: "Creative Electronics",
+    title: "Creative Electronics (Bachelor)",
     URL: '/images/CEfeedy.jpg',
     description:<> <p>{"In the course creative electronics I created a connected dog feeder which would dispense food on command. The device would also notify the user once the dispenser was almost out of food. The dog feeder was connected to my Google home speaker and allowed me to feed my dog using simple voice commands. This would make it a breeze to feed my dog. The prototype used a stepper motor to determine the right dose of food. "} </p>
     <p>{"This course was my first step into creating smart home devices. In this course we learnt how to work with electronics and Arduino’s which I enjoyed a lot. However, I wanted to take this a step further myself by figuring out how I could control my Arduino or ESP with my google home speaker. And so, I created Creating this device not only taught me how to work with technology and realize product prototypes, but also how to send data to my prototypes over the internet. "} </p>
    </>
     },
     {
-    title: "Pixii", 
+    title: "Pixii (Bachelor)", 
     URL:'/images/P3.png',
     description:<><p>{"Pixii a design research project in which different loci of control within ambient projection systems were explored. The at students aimed ambient projection system aided the transition between work and leisure and tries to steer users into a more balanced work-life balance. From this research was concluded that the students would prefer a more suggestive system that would allow for flexibility."} </p>
    </>
     },
     {
-    title: "heyOOCSI!",
+    title: "heyOOCSI! (Bachelor)",
     URL: '/images/heyOOCSIProbe.jpg',
     description: <><p>{"Heyoocsi is a protocol I wrote during my internship, For this project I connected the TU/e in-house IoT prototyping system OOCSI to the open-source home automation software Home-Assistant. Heyoocsi allows students and designers to rapidly create working smart home prototypes that can be controlled through homeassistant. Through HomeAssistant students can explore connections between devices and find emergent functionalities. Heyoocsi works like a structured interview protocol in which devices announce their functionalities."} </p>
    </>
     },
     {
-    title: "Prototyping Probes",
+    title: "Prototyping Probes (Bachelor)",
     URL: '/images/probe.jpg',
     description: <> <p>{" I was asked to create a data collecting probe for a workshop about data driven design conducted at SIGCHI New Orleans by Renée Noortman and Peter Lovei and was part of the e/MTIC MEDICAID project. The probes would be used in a data driven design workshop. In this workshop they explored how creating data collection probes can give us a clearer view on the design context."} </p>
    
@@ -87,33 +87,37 @@ const cards = [
     title: "Dare-to-Repair",
     URL: '/images/daretorepair.png',
     description:<p>{"We repair our products less and less, often enough we just throw an old or broken appliance away and replace it with a brand new unit. Extending the lifetime of an appliance could save us a lot of global warming potential. So the practice of repairing products could be very beneficial, but is often only done by enthusiasts, such enthusiasts can be found in for example Repair Cafés and hackerspaces. In this research we try to figure out what drives these enthusiasts in the repair process and how we can propagate this message to the rest of the world. The approach taken to do this is by trying to enhance the repair cafe experience through a clearer integration of creativity."}<p></p>{"In the dare to repair project, I learnt that design research could also be fun, as in my bachelor I did not quite understand the purpose of design research. As a maker, I am not too keen on writing reports and papers, but in this project I found my explorative approach to research."}</p>
-    },
-    {
-    title: "Interactional Morality",
-    URL: '/images/daretorepair.png',
-    description:<p>{"In the interactional morality course, I learnt a lot on societal problems surrounding equality and ethics. In The course we would learn about these problems and were trained into writing powerfull manifesto in a designerly manner. For me this course was quite an eye-opener as I always felt troubled expressing myself when it came to societal problems. This course did not only teach me on the complexity of these problems, but also trained be on how to make better arguments. This course helped me to understand the impact of design and technology on pressing social issues and allowed me intergrate the expertise area of user & society into my future projects"}</p>
     },  
-  
-    {
-    title: "Busy Town",
-    URL: '/images/busytown.jpg',
-    description:<p>{"Busy town is a research into creating more immersive toys by involving novel interaction technologies. Busy Town uses NFC to trigger sounds and visuals that match with their context. These toys can sense how fast they are going through NFC and adjust these effects accordingly. This research concluded that the contextual sound effects would help with immersion and play and entice exploration."}<p></p>{"This project was created for the course Designing User Interfaces using Emerging Technologies. In this course we learned how to explore the potential of new technologies. In this course I primarily learnt how to use technologies to demonstrate or mock-up interactions. Giving me an edge at effective prototyping."}</p>
-    },  
-    {
-    title: "Sensebox",
-    URL: '/images/Sensebox.jpg',
-    description:<p>{"The Sensebox is a research into creating hybrid digital physical tools to improve worldbuilding practices during scenario creation. The research builds forward on previous sandbox like interfaces and tries to embed a digital layer to improve home contextualisation. It does this by giving students an overview of the house and the necessary tools to modify this to suit the worlds they're creating."}<p></p>{"In the IoT sensebox project, I put the explorative research strategy learnt in the dare-to-repair project, to good use. This project would be a collaborative explorative study together with Teun Schutten, in which we explored adding additional modalities to the IoT sandbox. Here I used my Technology & Realisation and Math Data & Computing skills to create a new alternative sandbox, to measure the impact of the new modalities on storytelling."}</p>
-    },
-    
     {
     title: "Stekkie",
     URL: '/images/Stekkie.jpg',
-    description:<p>{"Stekkie looks into the development process of an adaptive charging solution to promote sustainable behaviour and balance the grid by focusing on individual households. This is done with the goal of making vehicle-to-grid charging more transparent. It does this by exploring various approaches to a digital twin model for this adaptive charger and its accompanying interface. Multiple interfaces were created alongside digital infrastructure and explorations of machine learning learning models. Forming our final design STEKKIE."}<p></p>{"Stekkie was the first course in which I tried to intergrate my moral judgements learnt in interactional morality into a design project. The course Designing with and for digital twins focussed on a data-driven design perspective in which machine learning and data gathering stood central. As a person with moral obligations against AI and excessive data collection, I tried to intergrate a more transparent approach to machine learning. I did this by creating an interface that would not only show AI suggestions, but also the data on which the AI based its recommendations."}</p>
+    description:<p>{"Stekkie is an adaptive charging solution to promote sustainable behaviour and help balance the grid. This is done with the goal of making vehicle-to-grid charging more transparent. Stekkie consists of a digital twin that reads information from the grid, weatherr and agenda of its user and gives recommendations on when its the best time to charge your electric vehicle."}<p></p>{"Stekkie was the first course in which I tried to intergrate my moral judgements learnt in interactional morality into a design project. The course Designing with and for digital twins focussed on a data-driven design perspective in which machine learning and data gathering stood central. As a person with moral obligations against AI and excessive data collection, I tried to intergrate a more transparent approach to machine learning. I did this by creating an interface that would not only show AI suggestions, but also the data on which the AI based its recommendations."}</p>
     },     
+    {
+    title: "Interactional Morality",
+    URL: '/images/daretorepair.png',
+    description:<><p>{"In the Course interactional morality I composed a manifesto about ethical use of artificial intelligence. This manifesto was critical about the current implementation of artificial intelligence and proposed several points of attention such as: Transparency, Blame and Open-Sourcing. The manifesto made to look like an old governmental document and so it was written on a typewriter. Several sections of the manifesto were redacted which made the manifesto look like it was advocating for unethical AI"}</p><p>{"In the interactional morality course, I learnt to talk and reflect on societal problems surrounding equality and ethics. In The course we would learn about these problems and were trained into writing powerfull manifesto's in a designerly manner. For me this course was quite an eye-opener as I always felt troubled expressing myself when it came to societal problems. This course did not only teach me on the complexity of these problems, but also trained be on how to make better arguments. This course helped me to understand the impact of design and technology on pressing social issues and allowed me intergrate the expertise area of user & society into my future projects"}</p></>
+    },  
+    {
+    title: "Rideswipe",
+    URL: '/images/busytown.jpg',
+    description:<p>{"Additionally for the course Designing User Interfaces using emerging technologies I created the rideswipe. The Rideswipe is interface to interact with your phone on a bicycle. This is done by embedding multi-touch sensors in the handle bars. These multi-touch sensors interact with the phone through bluetooth, allowing users to use media controls and interact with maps without having to take their hands of the handlebars."}<p></p>{"This project was created for the course Designing User Interfaces using Emerging Technologies. In this course we learned how to explore the potential of new technologies. In this course I primarily learnt how to use technologies to demonstrate or mock-up interactions. Giving me an edge at effective prototyping."}</p>
+    },  
+    {
+    title: "Busy Town",
+    URL: '/images/busytown.jpg',
+    description:<p>{"Busy town is a research into creating more immersive toys by involving novel interaction technologies. Busy Town consists of an nfc enabled playing mat and a smart car which uses NFC to trigger sounds and visuals. By measuring the time between scanning NFC triggers, these toys can sense their speed and adjust the sound-effects accordingly. Additionally some triggers on the playmat would toggle a traffic light. This research concluded that the contextual sound effects would help with immersion and play and entice exploration."}<p></p>{"This project was created for the course Designing User Interfaces using Emerging Technologies. In this course we learned how to explore the potential of new technologies. In this course I primarily learnt how to use technologies to demonstrate or mock-up interactions. Giving me an edge at effective prototyping."}</p>
+    },
+
+    {
+    title: "Sensebox",
+    URL: '/images/Sensebox.jpg',
+    description:<p>{"The Sensebox is a research into creating a hybrid physical digital environment to improve worldbuilding practices during scenario creation. The research builds forward on the original IoT sandbox, a learning environment used at the TU/e for designing smart home products. The sensebox embeds a new digital layer underneath this sandbox in which students can manipulate characters and interact with lights and other appliances. Giving students a new set of tools they can use during their world-building sessions."}<p></p>{"In the IoT sensebox project, I put the explorative research strategy learnt in the dare-to-repair project to good use. This project would be a collaborative explorative study together with Teun Schutten, in which I explored adding additional modalities to the IoT sandbox. Here I used my Technology & Realisation and Math Data & Computing skills to create a new alternative sandbox which was used to measure the impact of the new modalities on storytelling and worldbuilding."}</p>
+    },
     {
     title: "Claude",
     URL: '/images/Claude.jpg',
-    description:<p>{"We are dependent on big tech companies. Day in day out we are using services by Microsoft, Google, Meta, Apple, and Amazon. While we have to use their services to live our comfortable western lifestyle, they have perfected creating intricate digital profiles which are sold to the highest bidder. These profiles are so detailed, that these companies can almost assure their clients they can nudge your behavior, Influence what you buy or determine an entire election. And we don't seem to have a choice. The Claude project reshapes the future of the home servers by adapting them to suit the decentralized internet, putting privacy at center. This is done by drawing inspiration from the self-hosting community, a community of people that have been developing and hosting free and open-sources alternatives to big tech companies. Claude consists of personal little clouds that can be hosted at home, making it possible to store data at home, and a wallet to gain access to these servers. Making private file sharing, texting, streaming and much more possible, without have to rely on third parties. Giving back control to the the people who want to preserve their privacy in the digital future."}</p>
+    description:<><p>{"We are dependent on big tech companies. Day in day out we are using services by Microsoft, Google, Meta, Apple, and Amazon. While we have to use their services to live our comfortable western lifestyle, they have perfected creating intricate digital profiles which are sold to the highest bidder. These profiles are so detailed, that these companies can almost assure their clients they can nudge your behavior, Influence what you buy or determine an entire election. And we don't seem to have a choice. The Claude project reshapes the future of the home servers by adapting them to suit the decentralized internet, putting privacy at center. This is done by drawing inspiration from the self-hosting community, a community of people that have been developing and hosting free and open-sources alternatives to big tech companies. Claude consists of personal little clouds that can be hosted at home, making it possible to store data at home, without have to rely on third parties. Giving back control to the the people who want to preserve their privacy in the digital future."}</p><p>{"Scroll down for additional information on Claude"}</p></>
     },  
     {
     title: "Project Cards",
@@ -213,20 +217,36 @@ export default function Showcase(){
   
     // Create a gesture, we're interested in down-state, delta (current-pos - click-pos), direction and velocity
     return(
-        <Paper elevation={3} sx={{bgcolor: "background.cards", margin:"2vw"}} >
-            <Box sx={{display: "flex", minHeight: "50vh", }}>
-                <Grid container spacing ={12}>
-                    <Grid item xs={12} md={7}  >
-                            <Description count={likes}/>
-                    </Grid>
-                    <Grid item xs={12} md={5} justifyContent= "flex-end">
-                        <Container sx={{marginTop:"4vh",backgroundColor: 'background.dark', minWidth:"15vw", justifyContent:"center"}}>
-                            <Deck/>
-                        </Container>
-                    </Grid>
-                </Grid>
-            </Box>
-        </Paper>
+        <Paper elevation={3} sx={{ bgcolor: "background.cards", margin: "2vw" }}>
+        {/* <Grid container spacing={0.5}> */}
+        {/* <Grid item xs={12} md={1}>
+                <Skills/>
+            </Grid> */}
+        <Grid item xs={12} md={7}>
+          <Box sx={{ minHeight: "55em" }}>
+            <Grid container spacing={1}>
 
+              <Grid item xs={12} md={8} justifyContent="flex-start">
+                <Description count={likes} />
+              </Grid>
+              <Grid item xs={12} md={4}>
+                <Container
+                  sx={{
+                    backgroundColor: "background.dark",
+                    minWidth: "14vw",
+                    maxWidth: "50vw",
+                    minHeight: "55em",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Deck />
+                </Container>
+              </Grid>
+            </Grid>
+          </Box>
+
+          {/* </Grid> */}
+        </Grid>
+      </Paper>
     )
 }
