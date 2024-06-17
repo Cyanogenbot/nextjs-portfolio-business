@@ -12,10 +12,14 @@ import { Box } from '@mui/material';
 
 const Welcome = () => {
   const [videoQueue, setVideoQueue] = useState([
-    '/videos/sphere.mp4',
-    '/videos/polaris.mp4',
+    '/videos/Ringringremake.mp4',
     '/videos/rideswipe.mp4',
+    '/videos/polaris.mp4',
+    '/videos/sphere.mp4',
     '/videos/sjef.mp4',
+    
+    
+    
   ]);
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
   const videoRef = useRef(null);
