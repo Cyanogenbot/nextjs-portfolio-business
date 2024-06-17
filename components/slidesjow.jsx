@@ -12,7 +12,7 @@ import { Box } from '@mui/material';
 
 const Welcome = () => {
   const [videoQueue, setVideoQueue] = useState([
-    '/videos/Ringringremake.mp4',
+    '/videos/Ringringremakeh264.mp4',
     '/videos/rideswipe.mp4',
     '/videos/polaris.mp4',
     '/videos/sphere.mp4',
