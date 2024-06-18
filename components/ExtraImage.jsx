@@ -66,7 +66,6 @@ export default function ExtraImage(props) {
         />
       </Card>
       <Container>
-        {" "}
         <Typography
           component="h1"
           variant="h6"

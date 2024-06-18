@@ -51,7 +51,6 @@ function Page() {
   ));
 }
 
-
 export default function Nav(props) {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
@@ -87,9 +86,11 @@ export default function Nav(props) {
           <Grid container spacing={4} direction="row" alignItems="center">
             <Grid item xs={12} md={5}>
               <Container>
-
                 <Typography
-                variant="h7" component="h1" color="white" sx={{ color: '#fff' }}
+                  variant="h7"
+                  component="h1"
+                  color="white"
+                  sx={{ color: "#fff" }}
                 >
                   {"Diede's portfolio"}
                 </Typography>

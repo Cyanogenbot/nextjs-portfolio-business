@@ -13,7 +13,7 @@ export default function Layout({ children, home }) {
         <Head>
           <link rel="icon" href="/favicon.ico" />
           <meta name="Diede's portfolio" content="Diedes bachelor portfolio" />
-          <meta name="theme-color" content="#EF3E23"></meta>
+          {/* <meta name="theme-color" content="#EF3E23"></meta> */}
           <meta
             property="og:image"
             content={`https://og-image.vercel.app/${encodeURI(
@@ -70,7 +70,7 @@ export default function Layout({ children, home }) {
           </div>
         )}
       </div>
-      <Nav></Nav>
+      <Nav/>
 
       <main>{children}</main>
     </>
