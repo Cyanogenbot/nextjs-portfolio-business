@@ -97,7 +97,7 @@ export default function Nav(props) {
                 {/* <LogoIcon color="white" sx={{ fontSize: 0.5 }}/> */}
 
                 <Typography
-                  className={navStyles.title}
+                  // className={navStyles.title}
                   color="white"
                   variant="h7"
                   component="h1"
