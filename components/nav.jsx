@@ -89,7 +89,7 @@ export default function Nav(props) {
               <Container>
 
                 <Typography
-                variant="h7" component="h1" sx={{ color: '#fff' }}
+                variant="h7" component="h1" color="white" sx={{ color: '#fff' }}
                 >
                   {"Diede's portfolio"}
                 </Typography>
