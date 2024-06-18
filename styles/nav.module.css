@@ -1,3 +1,6 @@
+.title {
+    color: #ffffff;
+}
 .nav {
     height: auto;
     padding: 10px;
@@ -31,6 +34,3 @@
     background-color: blueviolet;
 }
 
-.title {
-    color: #ffffff;
-}
