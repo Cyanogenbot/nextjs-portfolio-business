@@ -24,6 +24,7 @@ const Welcome = () => {
   const [videoQueue, setVideoQueue] = useState([
     '/videos/Ringringremakeh264.mp4',
     '/videos/rideswipe.mp4',
+    '/videos/Duietfinalvideo.mp4',
     '/videos/polaris.mp4',
     '/videos/sjef.mp4',
     '/videos/sphere.mp4',
