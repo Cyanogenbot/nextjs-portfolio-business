@@ -92,8 +92,10 @@ const Lightroom = styled(Adobelightroom)`
 export default function Buffertext(props) {
   return (
     <section className={utilStyles.headingMd}>
-      <Container sx={{ direction: "column", minWidth:"100vw", minHeight:"15em" }}>
-        <Typography marginTop ="5vh"variant="h4" component="h3" color="white">
+      <Container
+        sx={{ direction: "column", minWidth: "100vw", minHeight: "15em" }}
+      >
+        <Typography marginTop="5vh" variant="h4" component="h3" color="white">
           {"Including the following hard-skills"}
         </Typography>
 

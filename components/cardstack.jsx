@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Grid from "@mui/material/Grid";
-import Card from "@mui/material/Card";
 import Typography from "@mui/material/Typography";
 import { useSprings, animated, interpolate } from "react-spring";
 import styles from "../components/layout.module.css";

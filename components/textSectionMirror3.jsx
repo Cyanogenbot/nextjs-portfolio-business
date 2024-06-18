@@ -1,7 +1,7 @@
 import Grid from "@mui/material/Grid";
 import TextPart from "./textPart";
 import ExtraImage2 from "./ExtraImage2";
-import ExtraImage3 from './ExtraImage3';
+
 export default function textSection(props) {
   return (
     <Grid container spacing={1}>

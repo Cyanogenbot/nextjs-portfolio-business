@@ -1,34 +1,31 @@
-import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
-import Paper from '@mui/material/Paper';
-import IconButton from '@mui/material/IconButton';
-import VolumeOffIcon from '@mui/icons-material/VolumeOff';
-import VolumeUpIcon from '@mui/icons-material/VolumeUp';
-import { styled } from '@mui/system';
-import React, { useState, useRef, useEffect } from 'react';
-import { Box } from '@mui/material';
-import styles from '../styles/welcome.module.css';
+import Paper from "@mui/material/Paper";
+import IconButton from "@mui/material/IconButton";
+import VolumeOffIcon from "@mui/icons-material/VolumeOff";
+import VolumeUpIcon from "@mui/icons-material/VolumeUp";
+import { styled } from "@mui/system";
+import React, { useState, useRef, useEffect } from "react";
+import { Box } from "@mui/material";
+import styles from "../styles/welcome.module.css";
 
 const OverlayButton = styled(IconButton)({
-  position: 'absolute',
-  bottom: '10px',
-  right: '10px',
-  backgroundColor: 'rgba(0, 0, 0, 0.5)',
-  color: 'white',
-  '&:hover': {
-    backgroundColor: 'rgba(0, 0, 0, 0.7)',
+  position: "absolute",
+  bottom: "10px",
+  right: "10px",
+  backgroundColor: "rgba(0, 0, 0, 0.5)",
+  color: "white",
+  "&:hover": {
+    backgroundColor: "rgba(0, 0, 0, 0.7)",
   },
 });
 
 const Welcome = () => {
   const [videoQueue, setVideoQueue] = useState([
-    '/videos/Ringringremakeh264.mp4',
-    '/videos/rideswipe.mp4',
-    '/videos/Duietfinalvideo.mp4',
-    '/videos/polaris.mp4',
-    '/videos/sjef.mp4',
-    '/videos/sphere.mp4',
-    
+    "/videos/Ringringremakeh264.mp4",
+    "/videos/rideswipe.mp4",
+    "/videos/Duietfinalvideo.mp4",
+    "/videos/polaris.mp4",
+    "/videos/sjef.mp4",
+    "/videos/sphere.mp4",
   ]);
 
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
@@ -48,7 +45,7 @@ const Welcome = () => {
 
   useEffect(() => {
     if (videoRef.current) {
-      videoRef.current.addEventListener('ended', handleVideoEnded);
+      videoRef.current.addEventListener("ended", handleVideoEnded);
       videoRef.current.src = videoQueue[currentVideoIndex];
       videoRef.current.load();
       videoRef.current.play().catch((error) => {
@@ -58,7 +55,7 @@ const Welcome = () => {
 
     return () => {
       if (videoRef.current) {
-        videoRef.current.removeEventListener('ended', handleVideoEnded);
+        videoRef.current.removeEventListener("ended", handleVideoEnded);
       }
     };
   }, [currentVideoIndex]);
@@ -67,21 +64,21 @@ const Welcome = () => {
     <Paper
       elevation={3}
       sx={{
-        position: 'relative',
-        width: '100vw',
-        height: '100vh',
-        maxHeight: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        overflow: 'hidden',
+        position: "relative",
+        width: "100vw",
+        height: "100vh",
+        maxHeight: "100vh",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        overflow: "hidden",
       }}
     >
       <Box
         sx={{
-          position: 'relative',
-          width: '100%',
-          height: '100%',
+          position: "relative",
+          width: "100%",
+          height: "100%",
         }}
       >
         <video
@@ -90,7 +87,7 @@ const Welcome = () => {
           muted={isMuted}
           preload="auto"
           ref={videoRef}
-          style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          style={{ width: "100%", height: "100%", objectFit: "cover" }}
         >
           <source src={videoQueue[currentVideoIndex]} type="video/mp4" />
           Your browser does not support the video tag.
@@ -104,7 +101,6 @@ const Welcome = () => {
 };
 
 export default Welcome;
-
 
 //   import React, { useEffect, useRef } from 'react';
 

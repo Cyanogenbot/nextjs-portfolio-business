@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Grid from "@mui/material/Grid";
-import Card from "@mui/material/Card";
 import Typography from "@mui/material/Typography";
 import { useSprings, animated, interpolate } from "react-spring";
 import styles from "../components/layout.module.css";
@@ -8,8 +7,6 @@ import { useDrag } from "react-use-gesture";
 import { Box } from "@mui/system";
 import { Paper } from "@mui/material";
 import Container from "@mui/material/Container";
-// import { Description } from "@mui/icons-material";
-import Skills from "../components/Skills";
 
 const cards = [
   {
@@ -243,7 +240,6 @@ export default function Showcase() {
       <Grid item xs={12} md={7}>
         <Box sx={{ minHeight: "60em" }}>
           <Grid container spacing={1}>
-
             <Grid item xs={12} md={5}>
               <Container
                 sx={{
