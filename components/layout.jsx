@@ -19,7 +19,7 @@ export default function Layout({ children, home }) {
           name="Diede's portfolio"
           content="Diedes bachelor portfolio"
         />
-        <meta name="theme-color" content="#000000"></meta>
+        <meta name="theme-color" content="#EF3E23"></meta>
         <meta
           property="og:image"
           content={`https://og-image.vercel.app/${encodeURI(

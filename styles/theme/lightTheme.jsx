@@ -47,7 +47,7 @@ const lightTheme = createTheme({
     fontWeight:'400',
     italic:false,
     fontStyle:"normal",
-    fontSize: '0.9rem',
+    fontSize: '0.8rem',
 },
   
     fontFamily: 'Spline Sans Mono',

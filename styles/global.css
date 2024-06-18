@@ -6,7 +6,7 @@
             font-size: 18px;
             overflow-x: hidden;
             position: relative;
-            cursor: url('https://raw.githubusercontent.com/round/Touch-Cursor/master/assets/up/touch-cursor-up.png'), auto;
+            cursor: url('https://raw.githubusercontent.com/round/Touch-Cursor/master/assets/up/touch-cursor-up.png') 40 40,auto;
         }
         
         * {

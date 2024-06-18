@@ -98,8 +98,8 @@ export default function Buffertext(props) {
         </Typography>
 
         <Grid
-          Width="100%"
-           
+         
+          marginTop="1vh"
           marginBottom="10vh"
           container
           direction="row"
