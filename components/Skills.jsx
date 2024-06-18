@@ -92,20 +92,18 @@ const Lightroom = styled(Adobelightroom)`
 export default function Buffertext(props) {
   return (
     <section className={utilStyles.headingMd}>
-      <Container  direction="column" maxWidth="xxl" minHeight="15em">
+      <Container sx={{ direction: "column", minWidth:"100vw", minHeight:"15em" }}>
         <Typography marginTop ="15vh"variant="h4" component="h3" color="white">
           {"Including the following hardskills"}
         </Typography>
 
         <Grid
-         
-          marginTop="1vh"
+          marginTop="1vh"s
           marginBottom="10vh"
           container
           direction="row"
           spacing={1}
           justifyContent="center"
-          
         >
           <Grid item xs={1} md={1}>
             <Illust />

@@ -61,16 +61,15 @@ const future={
 export default function Home() {
   return (
     <Layout home>
-    
+      {/* <time datetime="2016-10-25" suppressHydrationWarning />s */}
       <Slidesjow  sx={{width:"100vw"}}/>
 
       <div id="Identity"/>
-      <logoIcon  color="white"/>
       <Buffertext text = "Hi I'm Diede! an Industrial Design master student at the TU/e"/>
       <PIV title = {identity.title} content = {identity.content} image = {identity.image}/>
 
       <div id="Projects"/>
-      <Buffertext id ="Projects" text= "What do you do?"/>
+      <Buffertext id ="Projects" text = "What do you do?"/>
       <Deck/>
       <PIVMirror3 title = {latestProject.title} content = {latestProject.content} image = {latestProject.image} image2 = {latestProject.image2} image3 = {latestProject.image3}/>
       

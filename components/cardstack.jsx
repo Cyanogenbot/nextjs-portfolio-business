@@ -369,7 +369,7 @@ function Description(props) {
           paddingLeft="5vw"
           paddingRight="5vw"
           gutterBottom
-          paragraph="true"
+          paragraph
         >
           {cards[props.count].description}
         </Typography>

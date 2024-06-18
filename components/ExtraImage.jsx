@@ -47,8 +47,8 @@ export default function ExtraImage(props) {
 
   return (
     <>
-      <BackgroundOverlay show={enlarged} onClick={handleBackgroundClick} />
-      <Card elevation={3} sx={{ margin: "2vw", display: 'flex', alignItems: 'center' }}>
+      <BackgroundOverlay show={enlarged ? 1 : 0} onClick={handleBackgroundClick} />
+      <Card elevation={3} sx={{ margin: '2vw', display: 'flex', alignItems: 'center' }}>
         <EnlargedCardMedia
           component="img"
           image={props.image}
@@ -62,8 +62,7 @@ export default function ExtraImage(props) {
         variant="h6"
         color="white"
         gutterBottom
-        paddingLeft="3vw"
-        marginTop="-3vh"
+        sx={{ paddingLeft: '3vw', marginTop: '-3vh' }}
       >
         {props.caption}
       </Typography>
