@@ -88,6 +88,7 @@ export default function Nav(props) {
               "linear-gradient(180deg, rgba(0,0,0,1), rgba(0,0,0,0))",
             borderBottomLeftRadius: 10,
             borderBottomRightRadius: 10,
+            enableColorOnDark: "True",
           }}
         >
           <Grid container spacing={4} direction="row" alignItems="center">
