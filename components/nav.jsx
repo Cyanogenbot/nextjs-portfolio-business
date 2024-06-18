@@ -96,7 +96,7 @@ export default function Nav(props) {
               <Container>
                 <Typography
                   variant="h5"
-                  component="h1"
+                  component="h5"
                   color="white"
                   sx={{ color: "#fff" }}
                 >

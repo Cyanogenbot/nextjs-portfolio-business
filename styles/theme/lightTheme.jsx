@@ -43,7 +43,7 @@ const lightTheme = createTheme({
        italic: false,
        fontStyle: "normal",
        fontSize: '0.8rem',
-       color: '#fff'
+       color: '#ffffff',
      },
     h6:{
       fontWeight:'400',
