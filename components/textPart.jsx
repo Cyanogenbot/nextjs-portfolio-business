@@ -18,7 +18,7 @@ export default function TextPart(props){
                {props.title}
             </Typography>
         </Container>
-        <Card sx={{bgcolor: "background.cards", marginTop:"10vw",display:'flex',maxWidth:"xl"  }}>
+        <Card sx={{bgcolor: "background.cards", marginTop:"10vw",display:'flex',maxWidth:"xxl"  }}>
             <Typography sx={{ m: "4vw" }} component="h3" variant="h6" color="background.main" paragraph={true}
              
             >

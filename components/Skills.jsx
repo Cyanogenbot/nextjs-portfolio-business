@@ -93,12 +93,12 @@ export default function Buffertext(props) {
   return (
     <section className={utilStyles.headingMd}>
       <Container sx={{ direction: "column", minWidth:"100vw", minHeight:"15em" }}>
-        <Typography marginTop ="15vh"variant="h4" component="h3" color="white">
-          {"Including the following hardskills"}
+        <Typography marginTop ="5vh"variant="h4" component="h3" color="white">
+          {"Including the following hard-skills"}
         </Typography>
 
         <Grid
-          marginTop="1vh"s
+          marginTop="2vh"
           marginBottom="10vh"
           container
           direction="row"

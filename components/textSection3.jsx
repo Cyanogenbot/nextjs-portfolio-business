@@ -7,11 +7,10 @@ export default function textSection(props){
         <Grid container spacing={1}>
             <Grid item xs={12} md={9}>
                 <TextPart title={props.title} content={props.content}/>
-                
-
+            
             </Grid>
             <Grid item md={3} xs={12} >
-                        <ExtraImage2 image={props.image} image2={props.image2} image3={props.image3}/>
+                <ExtraImage2 image={props.image} image2={props.image2} image3={props.image3} caption={props.caption}/>
             </Grid>
 
         </Grid>

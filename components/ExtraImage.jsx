@@ -4,6 +4,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
 
 const EnlargedCardMedia = styled(CardMedia)(({ enlarge }) => ({
   transition: 'transform 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out, top 0.3s ease-in-out, left 0.3s ease-in-out',
@@ -57,15 +58,18 @@ export default function ExtraImage(props) {
           onClick={handleClick}
         />
       </Card>
-      <Typography
+      <Container>        <Typography
         component="h1"
         variant="h6"
         color="white"
         gutterBottom
-        sx={{ paddingLeft: '3vw', marginTop: '-3vh' }}
+        paddingLeft="1vw"
+        paddingRight="1vw"
+        // marginTop="-3vh"
+        align="center"
       >
         {props.caption}
-      </Typography>
+      </Typography></Container>
     </>
   );
 }

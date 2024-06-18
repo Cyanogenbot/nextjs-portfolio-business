@@ -37,7 +37,7 @@ const cards = [
         {" "}
         <p>
           {
-            "For this course we created mouth masks that were generated through code. Our code would cut up several pictures and glue them back together. The result is a pdf that can be printed on transfer paper and transferred on to a fabric stencil for a mouth mask. This process makes for a simple way to create a personalised mouthmasks in an accessible manner"
+            "For this course we created mouth masks that were generated through code. Our code would cut up several pictures and glue them back together. The result is a pdf that can be printed on transfer paper and transferred on to a fabric stencil for a mouth mask. This process makes a simple approach to create a personalised mouth masks."
           }
         </p>
       </>
@@ -98,7 +98,7 @@ const cards = [
         </p>
         <p>
           {
-            "This course was my first step into creating smart home devices. In this course we learnt how to work with electronics and Arduino’s which I enjoyed a lot. However, I wanted to take this a step further myself by figuring out how I could control my Arduino or ESP with my google home speaker. And so, I created Creating this device not only taught me how to work with technology and realize product prototypes, but also how to send data to my prototypes over the internet. "
+            "This course was my first step into creating smart home devices. In this course we learnt how to work with electronics and Arduino’s which I enjoyed a lot. However, I wanted to take this a step further myself by figuring out how I could control my Arduino or ESP with my google home speaker. And so, I created a google home connected dog feeder. This project has not only taught me how to work with technology and realize product prototypes, but also how to send data to my prototypes over the internet. "
           }{" "}
         </p>
       </>
@@ -295,7 +295,7 @@ const cards = [
   },
   {
     title: "Sensebox",
-    URL: "/images/sensebox.jpg",
+    URL: "/images/sensebox2.png",
     description: (
       <p>
         {
@@ -328,7 +328,8 @@ const cards = [
     description: (
       <>
         <p>{"To see my projects, click and drag the cards off the screen!"}</p>
-        <p>{"For the best fling experience, a mouse is recommended."}</p>
+        <p>{"For the best fling experience, a mouse is recommended.  "}</p>
+        <p>{"Cards will reappear at the end."}</p>
       </>
     ),
   },
