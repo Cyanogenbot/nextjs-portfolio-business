@@ -1,1 +1,1 @@
-# nextjs-portfolio-business
+# nextjs-portfolio-education
