@@ -94,17 +94,12 @@ export default function Nav(props) {
           <Grid container spacing={4} direction="row" alignItems="center">
             <Grid item xs={12} md={5}>
               <Container>
-                {/* <LogoIcon color="white" sx={{ fontSize: 0.5 }}/> */}
 
                 <Typography
-                  // className={navStyles.title}
-                  color="white"
-                  variant="h7"
-                  component="h1"
+                variant="h7" component="h1" color="white"
                 >
                   {"Diede's portfolio"}
                 </Typography>
-                {/* <logoIcon fontSize="small" color="white"/> */}
               </Container>
             </Grid>
             <Grid item xs={12} md={7}>
