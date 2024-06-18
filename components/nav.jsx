@@ -95,7 +95,7 @@ export default function Nav(props) {
             <Grid item xs={12} md={5}>
               <Container>
                 <Typography
-                  variant="h7"
+                  variant="h5"
                   component="h1"
                   color="white"
                   sx={{ color: "#fff" }}
