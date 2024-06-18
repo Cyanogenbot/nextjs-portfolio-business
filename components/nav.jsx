@@ -1,14 +1,21 @@
+import Link from "next/link";
 import { useRouter } from "next/router";
+import { useEffect } from "react";
 import navStyles from "../styles/nav.module.css";
 import Grid from "@mui/material/Grid";
+import Paper from "@mui/material/Paper";
 import AppBar from "@mui/material/AppBar";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 import Typography from "@mui/material/Typography";
+import MenuItem from "@mui/material/MenuItem";
+import Menu from "@mui/material/Menu";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import * as React from "react";
+import PropTypes from "prop-types";
+import Toolbar from "@mui/material/Toolbar";
 import Container from "@mui/material/Container";
-import CssBaseline from "@mui/material/CssBaseline";
+// import CssBaseline from "@mui/material/CssBaseline";
 // or
 import SvgIcon from "@mui/material/SvgIcon";
 // import { Typography } from '@mui/material/Typography';
@@ -72,7 +79,7 @@ export default function Nav(props) {
 
   return (
     <React.Fragment>
-      <CssBaseline />
+      {/* <CssBaseline /> */}
       <ElevationScroll {...props}>
         <AppBar
           className={navStyles.nav}
