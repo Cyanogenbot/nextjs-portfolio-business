@@ -95,6 +95,7 @@ export default function Nav(props) {
             <Grid item xs={12} md={5}>
               <Container>
                 <Typography
+                  className={navStyles.title}
                   variant="h5"
                   component="h5"
                   color="white"
