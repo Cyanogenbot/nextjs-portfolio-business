@@ -117,7 +117,7 @@ export default function Nav(props) {
                   },
                 }}
               >
-                <Page />
+              <Page />
               </Box>
             </Grid>
           </Grid>
