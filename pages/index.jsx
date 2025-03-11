@@ -102,7 +102,7 @@ export default function Home() {
       <PIVMirror title={future.title} content={future.content} image={future.image} caption={future.caption} />
 
       <Bufferlink text = "Want to be part of my future? Contact me!" link = "mailto: contact@designedbydie.de"/>
+      <a rel="me" href="https://mastodon.voordie.de/@diedeboef">Mastodon</a>
     </Layout>
-    <a rel="me" href="https://mastodon.voordie.de/@diedeboef">Mastodon</a>
   )
 }
