@@ -103,5 +103,6 @@ export default function Home() {
 
       <Bufferlink text = "Want to be part of my future? Contact me!" link = "mailto: contact@designedbydie.de"/>
     </Layout>
+    <a rel="me" href="https://mastodon.voordie.de/@diedeboef">Mastodon</a>
   )
 }
