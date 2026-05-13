@@ -1,7 +1,7 @@
 module.exports = {
   content: [
-    './pages/**/*.{html,js}',
-    './components/**/*.{html,js}',
+    './pages/**/*.{html,js,jsx}',
+    './components/**/*.{html,js,jsx}',
   ],
   presets: [],
   darkMode: 'media', // or 'class'

@@ -30,33 +30,33 @@ const lightTheme = createTheme({
   }, 
    typography:{
 
-    h3:{
+h3:{
         fontFamily: "quincy-cf",
         fontWeight:'700',
         italic:false,
         fontStyle:"normal",
-        fontSize: '5vw',
-        
+        fontSize: 'clamp(1.2rem, 3.5vw, 3rem)',
+         
      },
-     h5: {
-       fontWeight: '400',
-       italic: false,
-       fontStyle: "normal",
-       fontSize: '0.8rem',
-       color: '#ffffff',
-     },
-    h6:{
+h5: {
+        fontWeight: '400',
+        italic: false,
+        fontStyle: "normal",
+        fontSize: 'clamp(0.75rem, 1.8vw, 1rem)',
+        color: '#ffffff',
+      },
+      h6:{
+        fontWeight:'400',
+        italic:false,
+        fontStyle:"normal",
+        fontSize: 'clamp(0.85rem, 2vw, 1.25rem)',
+    },
+    h7:{
       fontWeight:'400',
       italic:false,
       fontStyle:"normal",
-      fontSize: '1rem',
+      fontSize: 'clamp(0.75rem, 1.8vw, 1rem)',
   },
-  h7:{
-    fontWeight:'400',
-    italic:false,
-    fontStyle:"normal",
-    fontSize: '0.8rem',
-},
   
     fontFamily: 'Spline Sans Mono',
     fontWeightLight: 300,

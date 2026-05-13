@@ -18,6 +18,7 @@ const EnlargedCardMedia = styled(CardMedia)(({ enlarge, aspectratio }) => ({
   width: enlarge ? `calc(80vh * ${aspectratio})` : "initial",
   height: enlarge ? "80vh" : "initial",
   transform: enlarge ? "translate(-50%, -50%)" : "none",
+  maxWidth: "100%",
 }));
 
 const BackgroundOverlay = styled(Box)(({ show }) => ({
@@ -75,7 +76,7 @@ export default function ExtraImage(props) {
           <Card
             elevation={3}
             sx={{
-              margin: "2vw",
+              margin: { xs: "1rem", md: "2vw" },
               marginBottom: "1vw",
               bgcolor: "background.cards",
               display: "flex",
@@ -89,6 +90,7 @@ export default function ExtraImage(props) {
               enlarge={enlargedImage === "image" ? 1 : 0}
               aspectratio={aspectratios["image"] || 1}
               onClick={() => handleClick("image")}
+              sx={{ width: "100%", height: "auto" }}
             />
           </Card>
         </Grid>
@@ -99,8 +101,6 @@ export default function ExtraImage(props) {
             variant="h6"
             color="white"
             gutterBottom
-            // paddingLeft="3vw"
-            // marginTop="-3vh"
             align="center"
           >
             {props.caption}
@@ -113,7 +113,7 @@ export default function ExtraImage(props) {
               <Card
                 elevation={3}
                 sx={{
-                  margin: "2vw",
+                  margin: { xs: "0.5rem", md: "2vw" },
                   marginRight: "1vw",
                   marginTop: ".7vh",
                   bgcolor: "background.cards",
@@ -128,6 +128,7 @@ export default function ExtraImage(props) {
                   enlarge={enlargedImage === "image2" ? 1 : 0}
                   aspectratio={aspectratios["image2"] || 1}
                   onClick={() => handleClick("image2")}
+                  sx={{ width: "100%", height: "auto" }}
                 />
               </Card>
             </Grid>
@@ -135,7 +136,7 @@ export default function ExtraImage(props) {
               <Card
                 elevation={3}
                 sx={{
-                  margin: "2vw",
+                  margin: { xs: "0.5rem", md: "2vw" },
                   marginLeft: "1vw",
                   marginTop: "1vh",
                   bgcolor: "background.cards",
@@ -150,6 +151,7 @@ export default function ExtraImage(props) {
                   enlarge={enlargedImage === "image3" ? 1 : 0}
                   aspectratio={aspectratios["image3"] || 1}
                   onClick={() => handleClick("image3")}
+                  sx={{ width: "100%", height: "auto" }}
                 />
               </Card>
             </Grid>

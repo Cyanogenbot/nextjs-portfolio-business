@@ -2,6 +2,7 @@ import Typography from "@mui/material/Typography";
 import Paper from "@mui/material/Paper";
 import Container from "@mui/material/Container";
 import Card from "@mui/material/Card";
+
 export default function TextPart(props) {
   return (
     <Paper
@@ -11,21 +12,23 @@ export default function TextPart(props) {
         height: "auto",
         display: "flex",
         justifyContent: "flex-start",
-        margin: "2vw",
+        margin: { xs: "1rem", md: "2vw" },
+        p: { xs: "0.5rem", md: "0" },
       }}
     >
       <Container
         sx={{
-          margin: "3vw",
+          margin: { xs: "1rem", md: "3vw" },
           position: "absolute",
           display: "flex",
           alignItems: "center",
           maxWidth: "xxl",
+          width: "100%",
         }}
       >
         <Typography
           component="h1"
-          variant="h3"
+          variant={{ xs: "h5", md: "h3" }}
           color="background.main"
           gutterBottom
         >
@@ -35,15 +38,16 @@ export default function TextPart(props) {
       <Card
         sx={{
           bgcolor: "background.cards",
-          marginTop: "10vw",
+          marginTop: { xs: "6rem", md: "10vw" },
           display: "flex",
           maxWidth: "xxl",
+          width: "100%",
         }}
       >
         <Typography
-          sx={{ m: "4vw" }}
+          sx={{ m: { xs: "1rem", md: "4vw" } }}
           component="h3"
-          variant="h6"
+          variant={{ xs: "body1", md: "h6" }}
           color="background.main"
           paragraph={true}
         >

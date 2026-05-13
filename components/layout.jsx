@@ -11,6 +11,7 @@ export default function Layout({ children, home }) {
     <>
       <div className={styles.container}>
         <Head>
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/favicon.ico" />
           <meta name="Diede's portfolio" content="Diedes bachelor portfolio" />
           {/* <meta name="theme-color" content="#EF3E23"></meta> */}

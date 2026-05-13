@@ -7,6 +7,7 @@ import { useDrag } from "react-use-gesture";
 import { Box } from "@mui/system";
 import Container from "@mui/material/Container";
 import { Paper } from "@mui/material";
+import { useMediaQuery } from "@mui/material";
 
 const cards = [
   {
@@ -333,6 +334,11 @@ const cards = [
     ),
   },
 ];
+const mobileDeck = cards.flatMap((card) => [
+  { type: "picture", title: card.title, URL: card.URL },
+  { type: "description", title: card.title, description: card.description },
+]);
+
 const to = (i) => ({
   x: 0,
   y: i * -4,
@@ -347,6 +353,8 @@ const trans = (r, s) =>
   }deg) rotateZ(${r}deg) scale(${s})`;
 
 function Description(props) {
+  const isMobile = useMediaQuery("(max-width:767px)");
+  if (isMobile) return null;
   return (
     <Grid container>
       <Grid item>
@@ -379,18 +387,21 @@ function Description(props) {
 }
 
 export default function Showcase() {
+  const isMobile = useMediaQuery("(max-width:767px)");
   const [gone, addItem] = useState(new Set());
-  const [likes, setLikes] = useState(cards.length - 1);
+  const deck = isMobile ? mobileDeck : cards;
+  const [likes, setLikes] = useState(deck.length - 1);
 
   function handleClick() {
     setLikes(likes - 1);
   }
 
   function clearDescription() {
-    setLikes(cards.length - 1);
+    const currentDeck = isMobile ? mobileDeck : cards;
+    setLikes(currentDeck.length - 1);
   }
 
-  const [props, set] = useSprings(cards.length, (i) => ({
+  const [props, set] = useSprings(deck.length, (i) => ({
     ...to(i),
     from: from(i),
   }));
@@ -418,8 +429,9 @@ export default function Showcase() {
         };
       });
 
-      if (!down && gone.size === cards.length) clearDescription();
-      if (!down && gone.size === cards.length)
+      const currentDeckLen = isMobile ? mobileDeck.length : cards.length;
+      if (!down && gone.size === currentDeckLen) clearDescription();
+      if (!down && gone.size === currentDeckLen)
         setTimeout(() => gone.clear() || set((i) => to(i)), 600);
     },
     { preventDefault: true }
@@ -428,7 +440,7 @@ export default function Showcase() {
   return (
     <Paper elevation={3} sx={{ bgcolor: "background.cards", margin: "2vw" }}>
       <Grid item xs={12} md={7}>
-        <Box sx={{ minHeight: "55em" }}>
+        <Box sx={{ minHeight: "575px" }}>
           <Grid container spacing={1}>
             <Grid item xs={12} md={7} justifyContent="flex-start">
               <Description count={likes} />
@@ -437,10 +449,9 @@ export default function Showcase() {
               <Container
                 sx={{
                   backgroundColor: "background.dark",
-                  marginTop: "5rem",
-                  minWidth: "14vw",
-                  maxWidth: "50vw",
-                  minHeight: "45em",
+                  width: "290px",
+                  maxWidth: "100%",
+                  height: "575px",
                   justifyContent: "center",
                 }}
               >
@@ -451,9 +462,76 @@ export default function Showcase() {
                       className={styles.yes}
                       style={{
                         transform: interpolate([rot, scale], trans),
-                        backgroundImage: `url(${cards[i].URL})`,
+                        backgroundImage:
+                          deck[i].URL ? `url(${deck[i].URL})` : undefined,
                       }}
-                    />
+                    >
+                      {deck[i].type === "description" && (
+                        <Box
+                          sx={{
+                            padding: "0.5rem 0.6rem",
+                            height: "100%",
+                            display: "flex",
+                            flexDirection: "column",
+                            boxSizing: "border-box",
+                            bgcolor: "#181818",
+                            color: "#F8F0E3",
+                            overflow: "hidden",
+                          }}
+                        >
+                          <Typography
+                            component="h4"
+                            sx={{
+                              fontWeight: "700",
+                              marginBottom: "0.3rem",
+                              color: "#64ffda",
+                              fontSize: "0.75rem",
+                              lineHeight: 1.1,
+                            }}
+                          >
+                            {deck[i].title}
+                          </Typography>
+                          <Typography
+                            component="div"
+                            sx={{
+                              lineHeight: 1.5,
+                              fontSize: "0.65rem",
+                              letterSpacing: "0.02em",
+                              "& p": {
+                                marginBottom: "0.4rem",
+                              },
+                            }}
+                          >
+                            {deck[i].description}
+                          </Typography>
+                        </Box>
+                      )}
+                      {deck[i].type === "picture" && (
+                        <Box
+                          sx={{
+                            height: "100%",
+                            display: "flex",
+                            alignItems: "flex-end",
+                            justifyContent: "center",
+                            borderRadius: "15px",
+                            padding: "0.8rem",
+                            boxSizing: "border-box",
+                          }}
+                        >
+                          <Typography
+                            variant="caption"
+                            sx={{
+                              color: "rgba(255,255,255,0.7)",
+                              fontWeight: "500",
+                              textShadow: "0 1px 3px rgba(0,0,0,0.8)",
+                              fontSize: "0.75rem",
+                            }}
+                          >
+                            {deck[i].title}
+                          </Typography>
+                        </Box>
+                      )}
+                    </animated.div>
                   </animated.div>
                 ))}
               </Container>

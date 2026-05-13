@@ -8,12 +8,12 @@
 
 .no {
     position: absolute;
-    margin-top: 6%;
-    padding-left: 6%;
-    /* min-height: 75vh; */
+    margin-top: 170px;
+    margin-left: -10px;
+    padding: 0;
     will-change: transform;
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     justify-content: center;
 }
 
@@ -22,10 +22,44 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    min-width: 23.5rem;
-    min-height: 33rem;
-    max-height: 70vh;
+    width: 290px;
+    height: 380px;
     will-change: transform;
     border-radius: 15px;
     box-shadow: 0 12.5px 100px -10px rgba(50, 50, 73, 0.3), 0 10px 10px -10px rgba(50, 50, 73, 0.2);
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+.no {
+        margin-top: 30px;
+    }
+
+    .yes {
+        width: 23.5rem;
+        height: 33rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .no {
+        margin-left: -15px;
+    }
+
+    .yes {
+        box-shadow: none;
+        width: calc(100vw - 20px);
+        max-width: 290px;
+    }
+}
+
+
+
+.cardDescription {
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    overflow-y: auto;
 }

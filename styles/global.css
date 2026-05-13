@@ -1,49 +1,61 @@
-        html,
+html,
         body {
             padding: 0;
             margin: 0;
             line-height: 1.6;
-            font-size: 18px;
-            overflow-x: hidden;
+            font-size: clamp(13px, 2vw, 18px);
             position: relative;
-            cursor: url('https://raw.githubusercontent.com/round/Touch-Cursor/master/assets/up/touch-cursor-up.png') 40 40,auto;
+            overflow-x: hidden;
         }
-        
+
+        @media (max-width: 767px) {
+            h1, h2, h3 {
+                font-size: 1.3em !important;
+            }
+        }
+
+        @media (hover: hover) and (pointer: fine) {
+            html, body {
+                cursor: url('https://raw.githubusercontent.com/round/Touch-Cursor/master/assets/up/touch-cursor-up.png') 40 40, auto;
+            }
+        }
+
         * {
             box-sizing: border-box;
         }
-        
+
         a {
             text-decoration: none;
         }
-        
+
         a:hover {
             text-decoration: underline;
         }
-        
+
         img {
             max-width: 100%;
             display: block;
         }
-        /* width */
-        
-         ::-webkit-scrollbar {
+
+        p, .Card, .CardMedia {
+            overflow-wrap: break-word;
+            word-break: break-word;
+        }
+
+        ::-webkit-scrollbar {
             width: 8px;
         }
-        /* Track */
-        
-         ::-webkit-scrollbar-track {
+
+        ::-webkit-scrollbar-track {
             background: #21212100;
             border-radius: 5px;
         }
-        /* Handle */
-        
-         ::-webkit-scrollbar-thumb {
+
+        ::-webkit-scrollbar-thumb {
             background: #fff;
             border-radius: 5px;
         }
-        /* Handle on hover */
-        
-         ::-webkit-scrollbar-thumb:hover {
+
+        ::-webkit-scrollbar-thumb:hover {
             background: #555;
         }

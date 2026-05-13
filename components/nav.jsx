@@ -3,22 +3,19 @@ import { useRouter } from "next/router";
 import { useEffect } from "react";
 import navStyles from "../styles/nav.module.css";
 import Grid from "@mui/material/Grid";
-import Paper from "@mui/material/Paper";
 import AppBar from "@mui/material/AppBar";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 import Typography from "@mui/material/Typography";
-import MenuItem from "@mui/material/MenuItem";
-import Menu from "@mui/material/Menu";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import * as React from "react";
-import PropTypes from "prop-types";
 import Toolbar from "@mui/material/Toolbar";
 import Container from "@mui/material/Container";
-// import CssBaseline from "@mui/material/CssBaseline";
-// or
 import SvgIcon from "@mui/material/SvgIcon";
-// import { Typography } from '@mui/material/Typography';
+import MenuItem from "@mui/material/MenuItem";
+import Menu from "@mui/material/Menu";
+import IconButton from "@mui/material/IconButton";
+import MenuIcon from "@mui/icons-material/Menu";
 
 const pages = [
   "Home",
@@ -43,13 +40,13 @@ function ElevationScroll(props) {
   });
 }
 
-function Page() {
-  const router = useRouter();
+function PageButtons({ router }) {
   return pages.map((page) => (
     <Button
       key={page}
       color="background"
       onClick={() => router.push(`/#${page}`)}
+      sx={{ display: { xs: "none", md: "flex" } }}
     >
       <Typography variant="h7" component="h1" color="white" textAlign="center">
         {page}
@@ -59,27 +56,19 @@ function Page() {
 }
 
 export default function Nav(props) {
+  const router = useRouter();
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
   };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
-
   return (
     <React.Fragment>
-      {/* <CssBaseline /> */}
       <ElevationScroll {...props}>
         <AppBar
           className={navStyles.nav}
@@ -91,40 +80,60 @@ export default function Nav(props) {
             enableColorOnDark: "True",
           }}
         >
-          <Grid container spacing={4} direction="row" alignItems="center">
-            <Grid item xs={12} md={5}>
-              <Container>
-                <Typography
-                  className={navStyles.title}
-                  variant="h5"
-                  component="h5"
-                  color="white"
-                  sx={{ color: "#fff" }}
-                >
-                  {"Diede's portfolio"}
-                </Typography>
-              </Container>
-            </Grid>
-            <Grid item xs={12} md={7}>
-              <Box
-                sx={{
-                  flexGrow: 1,
-                  display: {
-                    xs: "none",
-                    md: "flex",
-                    justifyContent: "flex-end",
-                    alignItems: "center",
-                  },
-                }}
+          <Toolbar>
+            <Box sx={{ flexGrow: 1 }}>
+              <Typography
+                className={navStyles.title}
+                variant="h6"
+                component="h5"
+                color="white"
+                sx={{ color: "#fff", fontSize: { xs: "1rem", md: "1.25rem" } }}
               >
-              <Page />
-              </Box>
-            </Grid>
-          </Grid>
+                {"Diede's portfolio"}
+              </Typography>
+            </Box>
+
+            <Box
+              sx={{
+                display: { xs: "none", md: "flex" },
+                alignItems: "center",
+              }}
+            >
+              <PageButtons router={router} />
+            </Box>
+
+            <Box sx={{ display: { xs: "flex", md: "none" } }}>
+              <IconButton
+                size="large"
+                aria-label="menu"
+                onClick={handleOpenNavMenu}
+                sx={{ color: "#fff" }}
+              >
+                <MenuIcon />
+              </IconButton>
+              <Menu
+                id="mobile-menu"
+                anchorEl={anchorElNav}
+                open={Boolean(anchorElNav)}
+                onClose={handleCloseNavMenu}
+                sx={{ display: { xs: "block", md: "none" } }}
+              >
+                {pages.map((page) => (
+                  <MenuItem
+                    key={page}
+                    onClick={() => {
+                      router.push(`/#${page}`);
+                      handleCloseNavMenu();
+                    }}
+                  >
+                    <Typography textAlign="center" color="white">{page}</Typography>
+                  </MenuItem>
+                ))}
+              </Menu>
+            </Box>
+          </Toolbar>
         </AppBar>
       </ElevationScroll>
-
-      <Container></Container>
     </React.Fragment>
   );
 }

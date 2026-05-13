@@ -18,6 +18,7 @@ const EnlargedCardMedia = styled(CardMedia)(({ enlarge }) => ({
   width: enlarge ? "80vw" : "initial",
   height: enlarge ? "80vh" : "initial",
   transform: enlarge ? "translate(-50%, -50%)" : "none",
+  maxWidth: "100%",
 }));
 
 const BackgroundOverlay = styled(Box)(({ show }) => ({
@@ -55,7 +56,7 @@ export default function ExtraImage(props) {
       />
       <Card
         elevation={3}
-        sx={{ margin: "2vw", display: "flex", alignItems: "center" }}
+        sx={{ margin: { xs: "1rem", md: "2vw" }, display: "flex", alignItems: "center" }}
       >
         <EnlargedCardMedia
           component="img"
@@ -63,6 +64,7 @@ export default function ExtraImage(props) {
           alt="green iguana"
           enlarge={enlarged ? 1 : 0}
           onClick={handleClick}
+          sx={{ width: "100%", height: "auto" }}
         />
       </Card>
       <Container>
@@ -71,9 +73,8 @@ export default function ExtraImage(props) {
           variant="h6"
           color="white"
           gutterBottom
-          paddingLeft="1vw"
-          paddingRight="1vw"
-          // marginTop="-3vh"
+          paddingLeft={{ xs: "0.5rem", md: "1vw" }}
+          paddingRight={{ xs: "0.5rem", md: "1vw" }}
           align="center"
         >
           {props.caption}

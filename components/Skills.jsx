@@ -18,72 +18,72 @@ import {
 
 const Illust = styled(Adobeillustrator)`
   color: #212121;
-  height: 8vw;
-  margin: 1vw;
+  height: clamp(44px, 8vw, 100px);
+  margin: clamp(8px, 1vw, 16px);
   &:hover {
     color: #cfe8fc;
   }
 `;
 const Indesign = styled(Adobeindesign)`
   color: #212121;
-  height: 8vw;
-  margin: 1vw;
+  height: clamp(44px, 8vw, 100px);
+  margin: clamp(8px, 1vw, 16px);
   &:hover {
     color: #cfe8fc;
   }
 `;
 const Photoshop = styled(Adobephotoshop)`
   color: #212121;
-  height: 8vw;
-  margin: 1vw;
+  height: clamp(44px, 8vw, 100px);
+  margin: clamp(8px, 1vw, 16px);
   &:hover {
     color: #cfe8fc;
   }
 `;
 const BlenderI = styled(Blender)`
   color: #212121;
-  height: 8vw;
-  margin: 1vw;
+  height: clamp(44px, 8vw, 100px);
+  margin: clamp(8px, 1vw, 16px);
   &:hover {
     color: #cfe8fc;
   }
 `;
 const Arduino = styled(Cplusplus)`
   color: #212121;
-  height: 8vw;
-  margin: 1vw;
+  height: clamp(44px, 8vw, 100px);
+  margin: clamp(8px, 1vw, 16px);
   &:hover {
     color: #cfe8fc;
   }
 `;
 const PythonI = styled(Python)`
   color: #212121;
-  height: 8vw;
-  margin: 1vw;
+  height: clamp(44px, 8vw, 100px);
+  margin: clamp(8px, 1vw, 16px);
   &:hover {
     color: #cfe8fc;
   }
 `;
 const Processing = styled(Processingfoundation)`
   color: #212121;
-  height: 8vw;
-  margin: 1vw;
+  height: clamp(44px, 8vw, 100px);
+  margin: clamp(8px, 1vw, 16px);
   &:hover {
     color: #cfe8fc;
   }
 `;
 const NextjsI = styled(Nextdotjs)`
   color: #212121;
-  height: 8vw;
-  margin: 1vw;
+  height: clamp(44px, 8vw, 100px);
+  margin: clamp(8px, 1vw, 16px);
   &:hover {
     color: #cfe8fc;
   }
 `;
 const Lightroom = styled(Adobelightroom)`
   color: #212121;
-  height: 8vw;
-  margin: 1vw;
+  height: clamp(44px, 8vw, 100px);
+  margin: clamp(8px, 1vw, 16px);
   &:hover {
     color: #cfe8fc;
   }
@@ -93,15 +93,15 @@ export default function Buffertext(props) {
   return (
     <section className={utilStyles.headingMd}>
       <Container
-        sx={{ direction: "column", minWidth: "100vw", minHeight: "15em" }}
+        sx={{ direction: "column", width: "100%", maxWidth: "100%" }}
       >
-        <Typography marginTop="5vh" variant="h4" component="h3" color="white">
+        <Typography marginTop={{ xs: "2rem", md: "5vh" }} variant="h4" component="h3" color="white">
           {"Including the following hard-skills"}
         </Typography>
 
         <Grid
-          marginTop="2vh"
-          marginBottom="10vh"
+          marginTop={{ xs: "1rem", md: "2vh" }}
+          marginBottom={{ xs: "2rem", md: "10vh" }}
           container
           direction="row"
           spacing={1}
