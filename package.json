@@ -4,10 +4,9 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "lint": "next lint",
-        "preinstall": "npx npm-force-resolutions"
+        "lint": "next lint"
     },
-    "resolutions": {
+    "overrides": {
         "glob-parent": "^6.0.1"
     },
     "dependencies": {
