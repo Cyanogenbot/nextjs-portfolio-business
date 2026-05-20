@@ -10,8 +10,9 @@
 
 .no {
   position: absolute;
-  margin-top: 170px;
-  margin-left: -10px;
+  margin-top: 0;
+  margin-left: 0;
+  top: 40%;
   padding: 0;
   will-change: transform;
   display: flex;
@@ -35,8 +36,8 @@
 @media (min-width: 768px) {
   .no {
     margin-top: 0;
-    top: 5%;
-    margin-left: -50px;
+    top: 0%;
+    margin-left: 0;
   }
 
   .yes {
@@ -48,8 +49,8 @@
 @media (min-width: 1400px) {
   .no {
     margin-top: 0;
-    top: 6%;
-    margin-left: -50px;
+    top: 40%;
+    margin-left: 0;
   }
 
   .yes {
@@ -61,8 +62,8 @@
 @media (min-width: 1920px) {
   .no {
     margin-top: 0;
-    top: 0%;
-    margin-left: -20px;
+    top: 40%;
+    margin-left: 0;
   }
 
   .yes {
@@ -73,7 +74,7 @@
 
 @media (max-width: 767px) {
   .no {
-    margin-left: -15px;
+    margin-left: 0;
   }
 
   .yes {
