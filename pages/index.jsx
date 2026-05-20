@@ -28,12 +28,12 @@ const identity = {
       </p>
       <p>
         {
-          "I specialise in UX research: understanding how people actually live with technology, how it impacts them, and how we can use technologies to support their values. That research feeds directly into design as I research how people interact and reflect on my provocations and probes, iteratively refining these into  prototypes tested with real people in real contexts."
+          "My specialisation is in UX research: understanding how people actually live with technology, how it impacts them, and how we can use technologies to support their values. That research feeds directly into design as I research how people interact and reflect on my provocations and probes, iteratively refining these into  prototypes tested with real people in real contexts."
         }
       </p>
       <p>
         {
-          "My focus areas are privacy-by-design, slow technology, and sustainability. Not as buzzwords, but as the values that shape my decision making."
+          "The domains that I primarily work within are privacy-by-design, slow technology, and sustainability. Not as buzzwords, but as the values that shape my decision making."
         }
       </p>
     </>
@@ -120,7 +120,12 @@ const latestProject = {
 
       <p>
         {
-          "In my project Claude (not related to anthropic), I aim to reshape the future of the home server by adapting it to suit the decentralized internet, but this time putting privacy at center. This is done by drawing inspiration from the self-hosting community, a community of people that have been developing and hosting alternatives to big tech companies. Claude creates personal little clouds that can be hosted at home. Giving back control into the hands of the people who want to preserve their digital privacy through data-sovereignty. This was done through 2 co-creation session to figure out how users would envision the concept of a personal home server. After which an auto-ethnographic study was held into figuring out what kind of architecture would be desired based on these home server concepts after which the concept was refined and validated with six experts and five students. The concept consists of two elements, the Claude portal; a home server on which users can store and share their data and the Claude wallet; a key wallet to manage access to your or your friends' their servers."
+          "In my project Claude (not related to anthropic), I aim to reshape the future of the home server by adapting it to suit the decentralized internet, but this time putting privacy at center. This is done by drawing inspiration from the self-hosting community, a community of people that have been developing and hosting alternatives to big tech companies. Claude creates personal little clouds that can be hosted at home. Giving back control into the hands of the people who want to preserve their digital privacy through data-sovereignty."
+        }
+      </p>
+      <p>
+        {
+          "This was done through 2 co-creation session to figure out how users would envision the concept of a personal home server. After which an auto-ethnographic study was held into figuring out what kind of architecture would be desired based on these home server concepts after which the concept was refined and validated with six experts and five students. The concept consists of two elements, the Claude portal; a home server on which users can store and share their data and the Claude wallet; a key wallet to manage access to your or your friends' their servers."
         }
       </p>
     </>
@@ -141,7 +146,7 @@ const future = {
       </p>
       <p>
         {
-          " When it comes to searching for a job, I would love to look for a position such as product owner or creative technology at a company with additional public interest. Combining both the conceptual and the realization aspects of design. Examples of which could be companies like Framework, Fairphone, Nextcloud or Nabu Casa. These companies could offer me additional perspectives on designing with social values in mind, all within the context of communities I already partake in. Another option would be getting a position at a small digital service design studio like Bureau Moeilijke Dingen, where I might be able to work on a variety of projects. By exploring different kind of jobs, I might find what kind of company I truly want to work for. One thing is clear however, the diededrive wil be rebuild better than ever, this time waterproof and with a backup..."
+          "When it comes to searching for a job, I would love to look for a position such as product owner or creative technology at a company with additional public interest. Combining both the conceptual and the realization aspects of design. Examples of which could be companies like Framework, Fairphone, Nextcloud or Nabu Casa. These companies could offer me additional perspectives on designing with social values in mind, all within the context of communities I already partake in. Another option would be getting a position at a small digital service design studio like Bureau Moeilijke Dingen, where I might be able to work on a variety of projects. By exploring different kind of jobs, I might find what kind of company I truly want to work for. One thing is clear however, the diededrive wil be rebuild better than ever, this time waterproof and with a backup..."
         }
       </p>
     </>
@@ -194,7 +199,7 @@ export default function Home({ cards, cardsReverse }) {
         caption={latestProject.caption}
       />
 
-      <Buffertext id="Projects" text="How did you develop as a designer?" />
+      {/* <Buffertext id="Projects" text="How did you develop as a designer?" />
       <PIV3
         title={development.title}
         content={development.content}
@@ -202,12 +207,13 @@ export default function Home({ cards, cardsReverse }) {
         image2={development.image2}
         image3={development.image3}
         caption={development.caption}
-      />
+      />*/}
+
       <div id="root"></div>
 
-      <Buffertext text="How do you see the future?" />
+      <Buffertext text="What is your vision on design?" />
       <div id="Vision" />
-      <PIVMirror3
+      <PIV3
         title={vision.title}
         content={vision.content}
         image={vision.image}

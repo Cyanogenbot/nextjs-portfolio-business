@@ -72,15 +72,17 @@ function Description({ cards, count }) {
             paddingBottom: "5vw",
           }}
         >
-          <Typography
-            component="h3"
-            variant="h7"
-            color="black"
-            gutterBottom
-            paragraph
-          >
-            {cards[count].description}
-          </Typography>
+          {cards[count].description.split(/\n\n+/).map((paragraph, idx) => (
+            <Typography
+              key={idx}
+              component="p"
+              variant="body1"
+              color="black"
+              paragraph
+            >
+              {paragraph.trim()}
+            </Typography>
+          ))}
         </Box>
       </Grid>
     </Grid>
@@ -199,19 +201,20 @@ transform: to([rot, scale], trans),
                           >
                             {deck[i].title}
                           </Typography>
-                          <Typography
-                            component="div"
-                            sx={{
-                              lineHeight: 1.5,
-                              fontSize: "0.65rem",
-                              letterSpacing: "0.02em",
-                              "& p": {
-                                marginBottom: "0.4rem",
-                              },
-                            }}
-                          >
-                            {deck[i].description}
-                          </Typography>
+                          {deck[i].description.split(/\n\n+/).map((paragraph, idx) => (
+                              <Typography
+                                key={idx}
+                                component="p"
+                                sx={{
+                                  lineHeight: 1.5,
+                                  fontSize: "0.65rem",
+                                  letterSpacing: "0.02em",
+                                  marginBottom: "0.4rem",
+                                }}
+                              >
+                                {paragraph.trim()}
+                              </Typography>
+                            ))}
                         </Box>
                       )}
                       {deck[i].type === "picture" && (

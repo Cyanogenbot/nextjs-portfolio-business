@@ -10,6 +10,8 @@ import { Paper } from "@mui/material";
 import { useMediaQuery } from "@mui/material";
 import IconButton from "@mui/material/IconButton";
 import RestartAltIcon from "@mui/icons-material/RestartAlt";
+
+
 const mobileDeck = (cards) =>
   cards.flatMap((card) => {
     const picture = { type: "picture", title: card.title, URL: card.URL };
@@ -35,20 +37,35 @@ const trans = (r, s) =>
     r / 10
   }deg) rotateZ(${r}deg) scale(${s})`;
 
-function Description({ cards, count }) {
+function Description({ cards, count, onOverflowChange }) {
   const isMobile = useMediaQuery("(max-width:768px)");
   const containerRef = React.useRef(null);
+  const [isOverflowing, setIsOverflowing] = React.useState(false);
+  const [showPill, setShowPill] = React.useState(true);
 
   React.useEffect(() => {
     const el = containerRef.current;
     if (el) {
       el.scrollTop = 0;
+      setShowPill(true);
+      const hasOverflow = el.scrollHeight > el.clientHeight;
+      setIsOverflowing(hasOverflow);
+      if (onOverflowChange) {
+        onOverflowChange(hasOverflow);
+      }
+
+      const handleScroll = () => {
+        setShowPill(false);
+      };
+
+      el.addEventListener("scroll", handleScroll);
+      return () => el.removeEventListener("scroll", handleScroll);
     }
-  }, [count]);
+  }, [count, onOverflowChange]);
 
   if (isMobile) return null;
   return (
-    <Grid container>
+    <Grid container sx={{ height: "575px", display: "flex", flexDirection: "column" }}>
       <Grid item>
         <Typography
           component="h1"
@@ -61,27 +78,48 @@ function Description({ cards, count }) {
           {cards[count].title}
         </Typography>
       </Grid>
-      <Grid item>
+      <Grid item sx={{ position: "relative", flex: 1, minHeight: 0 }}>
         <Box
           ref={containerRef}
           sx={{
-            maxHeight: "380px",
+            height: "100%",
             overflowY: "auto",
             paddingLeft: "5vw",
             paddingRight: "5vw",
             paddingBottom: "5vw",
           }}
         >
-          <Typography
-            component="h3"
-            variant="h7"
-            color="black"
-            gutterBottom
-            paragraph
-          >
-            {cards[count].description}
-          </Typography>
+          {cards[count].description.split(/\n\n+/).map((paragraph, idx) => (
+            <Typography
+              key={idx}
+              component="p"
+              variant="body1"
+              color="black"
+              paragraph
+            >
+              {paragraph.trim()}
+            </Typography>
+          ))}
         </Box>
+        {isOverflowing && showPill && (
+          <Box
+            sx={{
+              position: "absolute",
+              bottom: "1vw",
+              left: "50%",
+              transform: "translateX(-50%)",
+              bgcolor: "black",
+              color: "white",
+              borderRadius: "12px",
+              padding: "2px 8px",
+              fontSize: "0.65rem",
+              pointerEvents: "none",
+              zIndex: 10,
+            }}
+          >
+            Scroll for more
+          </Box>
+        )}
       </Grid>
     </Grid>
   );
@@ -92,6 +130,7 @@ export default function Showcase({ cards }) {
   const [gone, addItem] = useState(new Set());
   const deck = isMobile ? mobileDeck(cards) : cards;
   const [likes, setLikes] = useState(deck.length - 1);
+  const [hasOverflow, setHasOverflow] = useState(false);
 
   function handleClick() {
     setLikes(likes - 1);
@@ -144,12 +183,27 @@ export default function Showcase({ cards }) {
   );
 
   return (
-    <Paper elevation={3} sx={{ bgcolor: "background.cards", margin: "2vw" }}>
+    <Box sx={{ margin: "2vw 2vw 6vw 2vw" }}>
+        <Paper elevation={3} sx={{ bgcolor: "background.cards", position: "relative" }}>
+        {hasOverflow && (
+          <Box
+            sx={{
+              position: "absolute",
+              bottom: 0,
+              left: 0,
+              right: 0,
+              height: "40px",
+              background: "linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8))",
+              pointerEvents: "none",
+              zIndex: 1,
+            }}
+          />
+        )}
       <Grid item xs={12} md={7}>
         <Box sx={{ minHeight: "575px" }}>
           <Grid container spacing={1}>
             <Grid item xs={12} md={7}>
-              <Description cards={cards} count={likes} key={likes} />
+              <Description cards={cards} count={likes} key={likes} onOverflowChange={setHasOverflow} />
             </Grid>
             <Grid item xs={12} md={5}>
               <Container
@@ -165,7 +219,7 @@ export default function Showcase({ cards }) {
                 }}
               >
                 {props.map(({ x, y, rot, scale }, i) => (
-                  <animated.div key={i} style={{ x, y }} className={styles.no}>
+                  <animated.div key={i} style={{ x, y, zIndex: 2 }} className={styles.no}>
                     <animated.div
                       {...bind(i)}
                       className={styles.yes}
@@ -174,7 +228,6 @@ export default function Showcase({ cards }) {
                         backgroundImage: deck[i].URL
                           ? `url(${deck[i].URL})`
                           : undefined,
-                        zIndex: 1,
                       }}
                     >
                       {deck[i].type === "description" && (
@@ -202,19 +255,20 @@ export default function Showcase({ cards }) {
                           >
                             {deck[i].title}
                           </Typography>
-                          <Typography
-                            component="div"
-                            sx={{
-                              lineHeight: 1.5,
-                              fontSize: "0.65rem",
-                              letterSpacing: "0.02em",
-                              "& p": {
-                                marginBottom: "0.4rem",
-                              },
-                            }}
-                          >
-                            {deck[i].description}
-                          </Typography>
+                          {deck[i].description.split(/\n\n+/).map((paragraph, idx) => (
+                              <Typography
+                                key={idx}
+                                component="p"
+                                sx={{
+                                  lineHeight: 1.5,
+                                  fontSize: "0.65rem",
+                                  letterSpacing: "0.02em",
+                                  marginBottom: "0.4rem",
+                                }}
+                              >
+                                {paragraph.trim()}
+                              </Typography>
+                            ))}
                         </Box>
                       )}
                       {deck[i].type === "picture" && (
@@ -245,24 +299,25 @@ export default function Showcase({ cards }) {
                     </animated.div>
                   </animated.div>
                 ))}
-                <IconButton
-                  onClick={resetDeck}
-                  sx={{
-                    position: "absolute",
-                    bottom: "8px",
-                    right: "8px",
-                    color: "rgba(255,255,255,0.7)",
-                    bgcolor: "rgba(0,0,0,0.4)",
-                    "&:hover": { bgcolor: "rgba(0,0,0,0.6)" },
-                  }}
-                >
-                  <RestartAltIcon />
-                </IconButton>
               </Container>
             </Grid>
           </Grid>
         </Box>
       </Grid>
-    </Paper>
+        <IconButton
+          onClick={resetDeck}
+          sx={{
+            position: "absolute",
+            bottom: "8px",
+            left: "8px",
+            color: "rgba(255,255,255,0.7)",
+            bgcolor: "rgba(0,0,0,0.4)",
+            "&:hover": { bgcolor: "rgba(0,0,0,0.6)" },
+          }}
+        >
+          <RestartAltIcon />
+        </IconButton>
+        </Paper>
+      </Box>
   );
 }
