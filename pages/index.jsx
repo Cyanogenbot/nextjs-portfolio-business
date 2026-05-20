@@ -18,22 +18,22 @@ import Skills from "../components/Skills";
 import { getCards } from "../utility/getCardstackData";
 
 const identity = {
-  title: "Design identity",
+  title: "Welcome to my portfolio",
   content: (
     <>
       <p>
         {
-          "As a maker at heart, my interest lay in the field of 3D manufacturing, electronics, and programming. My peers know me for my ability to turn a concept into an experience. This ability to turn concepts into reality makes it easier to evaluate the concepts and build forward on them. I also like to tinker around with novel technologies and open source projects in my spare time, an example of which is that I host and maintain my own digital services on my old computer which I turned into a server. Most of my thinking is done through my hands, as I express myself through, drawing, photo & videography, coding and building."
+          "I'm Diede, an EngD candidate in Human-Systems Interaction at TU/e and an industrial designer with a deep interest in the relationship between technology and society. My work sits at the intersection of design research and creative technology as I build novel concepts, prototypes, and experiences that bring abstract futures into the room. But I also use design as a tool to gain a better understanding of the design context by utilizing Research-Through-Design methods."
         }
       </p>
       <p>
         {
-          "In my personal design process I delve deep into problems, often trying to get a complete overview of a situation or challenge (US & MDC). This gives me an all encompassing overview of the issue and a design context to work in. By quickly learning and mastering new concepts, I can communicate and collaborate with experts on an equal footing (BE), which allows me to get a better understanding of the design space. Based on this design space I then try to see how technology could take a role in this situation and design a concept around this (TR, MDC). Which then can be discussed with experts and users for additional insights and iterations(US, BE). Once a problem is turned into a concept, my maker skill-set allows me to iterate quickly and move towards a final design (TR, MDC). Combining the power of thoughtful concepts with quick realisation skills."
+          "I specialise in UX research: understanding how people actually live with technology, how it impacts them, and how we can use technologies to support their values. That research feeds directly into design as I research how people interact and reflect on my provocations and probes, iteratively refining these into  prototypes tested with real people in real contexts."
         }
       </p>
       <p>
         {
-          'When working together with other designers I take on the role of Creative Director. through which I try to preserve the overarching vision of the project, making sure the projects strong points are not lost and keeping alignment with concepts. My strength is flexibility as I am not scared to pivot. I aim to inspire others in the design team to give input, and democratically tackle decisions, but I am not scared to go against the grain. Hence I believe a position like "Product Owner" would suit me well in the future.'
+          "My focus areas are privacy-by-design, slow technology, and sustainability. Not as buzzwords, but as the values that shape my decision making."
         }
       </p>
     </>
@@ -50,22 +50,17 @@ const vision = {
     <>
       <p>
         {
-          'As a designer I am very critical of our neoliberal capitalist system where profits proceed people. Our society defines success by profitability rather than impact, enabling practices such as surveillance capitalism, where new products are designed for the sake of collecting more data, rather than helping people. I believe designers could take a stance against this growth and efficiency centred approach tso "innovation" by going the extra mile and design with the public good in mind.'
+          "I believe design has more power than we realize. In a society that defines success by profitability rather than impact, practices like surveillance capitalism have emerged, and human-centered values like safety, privacy, and happiness have been pushed aside. I believe designers could take a stance against this growth and efficiency centered approach by going the extra mile and design with the public good in mind. "
         }
       </p>
       <p>
         {
-          "An example of which can be found in designing around the internet. I believe the smart home itself resides in the users house, and not on an external cloud. This is because data protection often seems to be an afterthought in design, and sometimes even a business model. We have become the product ourselves in this capitalist society, where everyone want us to consume their products. Data sovereignty has become more important than ever and to do so we might have to rethink our digital infrastructure. Not only do I advocate for a decentralised internet where our digital lives are not ruled by big companies, but also the involvement of practices like Privacy by Design, which urges designers to take care of privacy throughout the entire design process. As practices like these can help us design for the public good."
+          "An example of which can be found in designing around the internet. I believe the smart home itself resides in the users house, and not on an external cloud. This is because data protection often seems to be an afterthought in design, and sometimes even a business model. Humans have turned into products of the attention economy and Data sovereignty has become more important than ever. But to act on this, we might have to rethink our digital infrastructure. Not only do I advocate for a decentralized internet where our digital lives are not ruled by a handful of companies, but also the involvement of practices like Privacy-by-Design, which urges designers to take care of privacy throughout the entire design process. As practices like these can help us design for the public good."
         }
       </p>
       <p>
         {
-          "Another topic would be sustainability, where planned obsolescence has been compromising products for a while. I believe that a more open approach to design, where hardware can be repaired, modded and maintained by anyone, can not just help us reduce waste, but also create better user experiences. An example of which would be the framework laptop, a laptop that is not only modular and repairable, but also actively involves its community to reuse old motherboards for other purposes. Just like I use my old computer as a server."
-        }
-      </p>
-      <p>
-        {
-          "As designers, we should take social values such as privacy, sustainability and equality and innovate based these core values, rather than innovate for the sake of technology and growth. Applying the idea of privacy by design to other social contexts, like sustainable by design or equal by design, might result into truly disruptive innovations."
+          "But the bigger idea is this: what if we applied that same logic to other contexts? Sustainable-by-design. Equal-by-design. As designers, we should be innovating from social values like privacy, sustainability, and equality rather than innovating for the sake of technology or growth. That would lead to truly disruptive work."
         }
       </p>
     </>
@@ -125,7 +120,7 @@ const latestProject = {
 
       <p>
         {
-          "The Claude project reshapes the future of the home server by adapting it to suit the decentralized internet, putting privacy at center. This is done by drawing inspiration from the self-hosting community, a community of people that have been developing and hosting alternatives to big tech companies. Claude creates personal little clouds that can be hosted at home. Giving back control into the hands of the people who want to preserve their digital privacy through data-sovereignty. This is done through 2 co-creation session to figure out how users would envision a personal home server. After which an auto-ethnographic study into the architecture of home-severs results into a concept. This concept is then refined and validated with six experts and five students. The concept consists of two elements, the Claude portal; a home server on which users can store and share their data and the Claude wallet; a key wallet to manage access to your or your friends' their servers."
+          "In my project Claude (not related to anthropic), I aim to reshape the future of the home server by adapting it to suit the decentralized internet, but this time putting privacy at center. This is done by drawing inspiration from the self-hosting community, a community of people that have been developing and hosting alternatives to big tech companies. Claude creates personal little clouds that can be hosted at home. Giving back control into the hands of the people who want to preserve their digital privacy through data-sovereignty. This was done through 2 co-creation session to figure out how users would envision the concept of a personal home server. After which an auto-ethnographic study was held into figuring out what kind of architecture would be desired based on these home server concepts after which the concept was refined and validated with six experts and five students. The concept consists of two elements, the Claude portal; a home server on which users can store and share their data and the Claude wallet; a key wallet to manage access to your or your friends' their servers."
         }
       </p>
     </>
