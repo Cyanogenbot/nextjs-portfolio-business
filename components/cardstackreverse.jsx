@@ -1,19 +1,28 @@
 import React, { useState } from "react";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-import { useSprings, animated, interpolate } from "react-spring";
-import styles from "../components/layout.module.css";
+import { useSprings, animated, to } from "react-spring";
+import styles from "../styles/layout.module.css";
 import { useDrag } from "react-use-gesture";
 import { Box } from "@mui/system";
 import { Paper } from "@mui/material";
 import Container from "@mui/material/Container";
 import { useMediaQuery } from "@mui/material";
-const mobileDeck = (cards) => cards.flatMap((card) => [
-  { type: "picture", title: card.title, URL: card.URL },
-  { type: "description", title: card.title, description: card.description },
-]);
+import IconButton from "@mui/material/IconButton";
+import RestartAltIcon from "@mui/icons-material/RestartAlt";
+const mobileDeck = (cards) =>
+  cards.flatMap((card) => {
+    const picture = { type: "picture", title: card.title, URL: card.URL };
+    const description = {
+      type: "description",
+      title: card.title,
+      description: card.description,
+    };
+    if (card.title === "Project Cards") return [picture];
+    return [picture, description];
+  });
 
-const to = (i) => ({
+const springTo = (i) => ({
   x: 0,
   y: i * -4,
   scale: 1,
@@ -27,7 +36,7 @@ const trans = (r, s) =>
   }deg) rotateZ(${r}deg) scale(${s})`;
 
 function Description({ cards, count }) {
-  const isMobile = useMediaQuery("(max-width:767px)");
+  const isMobile = useMediaQuery("(max-width:768px)");
   const containerRef = React.useRef(null);
 
   React.useEffect(() => {
@@ -79,7 +88,7 @@ function Description({ cards, count }) {
 }
 
 export default function Showcase({ cards }) {
-  const isMobile = useMediaQuery("(max-width:767px)");
+  const isMobile = useMediaQuery("(max-width:768px)");
   const [gone, addItem] = useState(new Set());
   const deck = isMobile ? mobileDeck(cards) : cards;
   const [likes, setLikes] = useState(deck.length - 1);
@@ -89,12 +98,17 @@ export default function Showcase({ cards }) {
   }
 
   function clearDescription() {
-    const currentDeck = isMobile ? mobileDeck(cards) : cards;
-    setLikes(currentDeck.length - 1);
+    setLikes(deck.length - 1);
+  }
+
+  function resetDeck() {
+    gone.clear();
+    setLikes(deck.length - 1);
+    set((i) => springTo(i));
   }
 
   const [props, set] = useSprings(deck.length, (i) => ({
-    ...to(i),
+    ...springTo(i),
     from: from(i),
   }));
 
@@ -121,10 +135,10 @@ export default function Showcase({ cards }) {
         };
       });
 
-      const currentDeckLen = isMobile ? mobileDeck.length : cards.length;
+      const currentDeckLen = isMobile ? mobileDeck(cards).length : cards.length;
       if (!down && gone.size === currentDeckLen) clearDescription();
       if (!down && gone.size === currentDeckLen)
-        setTimeout(() => gone.clear() || set((i) => to(i)), 600);
+        setTimeout(() => gone.clear() || set((i) => springTo(i)), 600);
     },
     { preventDefault: true }
   ); // Prevent default behavior here
@@ -147,96 +161,100 @@ export default function Showcase({ cards }) {
                   position: "relative",
                 }}
               >
-{props.map(({ x, y, rot, scale }, i) => (
-                   <animated.div key={i} style={{ x, y }} className={styles.no}>
-                     <animated.div
-                       {...bind(i)}
-                       className={styles.yes}
-                       style={{
-                         transform: interpolate([rot, scale], trans),
-                         backgroundImage:
-                           deck[i].URL ? `url(${deck[i].URL})` : undefined,
-                       }}
-                     >
-                       {deck[i].type === "description" && (
-                         <Box
-                           sx={{
-                             padding: "0.5rem 0.6rem",
-                             height: "100%",
-                             display: "flex",
-                             flexDirection: "column",
-                             boxSizing: "border-box",
-                             bgcolor: "#181818",
-                             color: "#F8F0E3",
-                             overflow: "hidden",
-                           }}
-                         >
-                           <Typography
-                             component="h4"
-                             sx={{
-                               fontWeight: "700",
-                               marginBottom: "0.3rem",
-                               color: "#64ffda",
-                               fontSize: "0.75rem",
-                               lineHeight: 1.1,
-                             }}
-                           >
-                             {deck[i].title}
-                           </Typography>
-                           <Typography
-                             component="div"
-                             sx={{
-                               lineHeight: 1.5,
-                               fontSize: "0.65rem",
-                               letterSpacing: "0.02em",
-                               "& p": {
-                                 marginBottom: "0.4rem",
-                               },
-                             }}
-                           >
-                             {deck[i].description}
-                           </Typography>
-                         </Box>
-                       )}
-                       {deck[i].type === "picture" && (
-                         <Box
-                           sx={{
-                             height: "100%",
-                             display: "flex",
-                             alignItems: "flex-end",
-                             justifyContent: "center",
-                             borderRadius: "15px",
-                             padding: "0.8rem",
-                             boxSizing: "border-box",
-                           }}
-                         >
-                           <Typography
-                             variant="caption"
-                             sx={{
-                               color: "rgba(255,255,255,0.7)",
-                               fontWeight: "500",
-                               textShadow: "0 1px 3px rgba(0,0,0,0.8)",
-                               fontSize: "0.75rem",
-                             }}
-                           >
-                             {deck[i].title}
-                           </Typography>
-                         </Box>
-                       )}
-                     </animated.div>
-                   </animated.div>
-                 ))}
-                 <Box
-                   sx={{
-                     position: "absolute",
-                     bottom: 0,
-                     left: 0,
-                     right: 0,
-                     height: "40px",
-                     background: "linear-gradient(to bottom, transparent, rgba(0,0,0,0.5))",
-                     pointerEvents: "none",
-                   }}
-                 />
+                {props.map(({ x, y, rot, scale }, i) => (
+                  <animated.div key={i} style={{ x, y }} className={styles.no}>
+                    <animated.div
+                      {...bind(i)}
+                      className={styles.yes}
+                      style={{
+transform: to([rot, scale], trans),
+                         backgroundImage: deck[i].URL
+                           ? `url(${deck[i].URL})`
+                           : undefined,
+                         zIndex: 1,
+                      }}
+                    >
+                      {deck[i].type === "description" && (
+                        <Box
+                          sx={{
+                            padding: "0.5rem 0.6rem",
+                            height: "100%",
+                            display: "flex",
+                            flexDirection: "column",
+                            boxSizing: "border-box",
+                            bgcolor: "#181818",
+                            color: "#F8F0E3",
+                            overflow: "hidden",
+                          }}
+                        >
+                          <Typography
+                            component="h4"
+                            sx={{
+                              fontWeight: "700",
+                              marginBottom: "0.3rem",
+                              color: "#64ffda",
+                              fontSize: "0.75rem",
+                              lineHeight: 1.1,
+                            }}
+                          >
+                            {deck[i].title}
+                          </Typography>
+                          <Typography
+                            component="div"
+                            sx={{
+                              lineHeight: 1.5,
+                              fontSize: "0.65rem",
+                              letterSpacing: "0.02em",
+                              "& p": {
+                                marginBottom: "0.4rem",
+                              },
+                            }}
+                          >
+                            {deck[i].description}
+                          </Typography>
+                        </Box>
+                      )}
+                      {deck[i].type === "picture" && (
+                        <Box
+                          sx={{
+                            height: "100%",
+                            display: "flex",
+                            alignItems: "flex-end",
+                            justifyContent: "center",
+                            borderRadius: "15px",
+                            padding: "0.8rem",
+                            boxSizing: "border-box",
+                          }}
+                        >
+                          <Typography
+                            variant="caption"
+                            sx={{
+                              color: "rgba(255,255,255,0.7)",
+                              fontWeight: "500",
+                              textShadow: "0 1px 3px rgba(0,0,0,0.8)",
+                              fontSize: "0.75rem",
+                            }}
+                          >
+                            {deck[i].title}
+                          </Typography>
+                        </Box>
+                      )}
+                    </animated.div>
+                  </animated.div>
+                ))}
+                <IconButton
+                  onClick={resetDeck}
+                  sx={{
+                    position: "absolute",
+                    bottom: "8px",
+                    right: "8px",
+                    color: "rgba(255,255,255,0.7)",
+                    bgcolor: "rgba(0,0,0,0.4)",
+                    "&:hover": { bgcolor: "rgba(0,0,0,0.6)" },
+                  }}
+                >
+                  <RestartAltIcon />
+                </IconButton>
               </Container>
             </Grid>
             <Grid item xs={12} md={7} justifyContent="flex-start">
