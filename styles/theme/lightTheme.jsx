@@ -30,15 +30,21 @@ const lightTheme = createTheme({
   }, 
    typography:{
 
-h3:{
+h3: {
         fontFamily: "quincy-cf",
-        fontWeight:'700',
-        italic:false,
-        fontStyle:"normal",
+        fontWeight: '700',
+        italic: false,
+        fontStyle: "normal",
         fontSize: 'clamp(1.2rem, 3.5vw, 3rem)',
-         
-     },
+      },
+h4: {
+        fontFamily: "quincy-cf",
+        fontWeight: '700',
+        italic: false,
+        fontStyle: "normal",
+      },
 h5: {
+        fontFamily: "quincy-cf",
         fontWeight: '400',
         italic: false,
         fontStyle: "normal",

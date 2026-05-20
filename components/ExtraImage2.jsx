@@ -15,10 +15,12 @@ const EnlargedCardMedia = styled(CardMedia)(({ enlarge, aspectratio }) => ({
   position: enlarge ? "fixed" : "initial",
   top: enlarge ? "50%" : "auto",
   left: enlarge ? "50%" : "auto",
-  width: enlarge ? `calc(80vh * ${aspectratio})` : "initial",
-  height: enlarge ? "80vh" : "initial",
+  width: enlarge ? `calc(60vh * ${aspectratio})` : "initial",
+  height: enlarge ? "60vh" : "100%",
   transform: enlarge ? "translate(-50%, -50%)" : "none",
-  maxWidth: "100%",
+  maxWidth: "90vw",
+  maxHeight: "90vh",
+  objectFit: enlarge ? "cover" : "cover",
 }));
 
 const BackgroundOverlay = styled(Box)(({ show }) => ({
@@ -83,15 +85,15 @@ export default function ExtraImage(props) {
               alignItems: "center",
             }}
           >
-            <EnlargedCardMedia
-              component="img"
-              image={props.image}
-              alt="green iguana"
-              enlarge={enlargedImage === "image" ? 1 : 0}
-              aspectratio={aspectratios["image"] || 1}
-              onClick={() => handleClick("image")}
-              sx={{ width: "100%", height: "auto" }}
-            />
+<EnlargedCardMedia
+                component="img"
+                image={props.image}
+                alt="green iguana"
+                enlarge={enlargedImage === "image" ? 1 : 0}
+                aspectratio={aspectratios["image"] || 1}
+                onClick={() => handleClick("image")}
+                sx={{ width: "100%", height: "100%" }}
+              />
           </Card>
         </Grid>
         <Grid item>
@@ -128,7 +130,7 @@ export default function ExtraImage(props) {
                   enlarge={enlargedImage === "image2" ? 1 : 0}
                   aspectratio={aspectratios["image2"] || 1}
                   onClick={() => handleClick("image2")}
-                  sx={{ width: "100%", height: "auto" }}
+                  sx={{ width: "100%", height: "100%" }}
                 />
               </Card>
             </Grid>
@@ -151,7 +153,7 @@ export default function ExtraImage(props) {
                   enlarge={enlargedImage === "image3" ? 1 : 0}
                   aspectratio={aspectratios["image3"] || 1}
                   onClick={() => handleClick("image3")}
-                  sx={{ width: "100%", height: "auto" }}
+                  sx={{ width: "100%", height: "100%" }}
                 />
               </Card>
             </Grid>

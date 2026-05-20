@@ -18,7 +18,7 @@ export default function ExtraImage(props) {
               alignItems: "center",
             }}
           >
-            <CardMedia component="img" image={props.image} alt="green iguana" />
+            <CardMedia component="img" image={props.image} alt="green iguana" sx={{ height: "100%", objectFit: "cover" }} />
           </Card>
         </Grid>
         <Grid item xs={2}>
@@ -33,11 +33,12 @@ export default function ExtraImage(props) {
               alignItems: "center",
             }}
           >
-            <CardMedia
-              component="img"
-              image={props.image2}
-              alt="green iguana"
-            />
+<CardMedia
+                component="img"
+                image={props.image2}
+                alt="green iguana"
+                sx={{ height: "100%", objectFit: "cover" }}
+              />
           </Card>
         </Grid>
         <Grid item xs={2}>
@@ -52,11 +53,12 @@ export default function ExtraImage(props) {
               alignItems: "center",
             }}
           >
-            <CardMedia
-              component="img"
-              image={props.image3}
-              alt="green iguana"
-            />
+<CardMedia
+                component="img"
+                image={props.image3}
+                alt="green iguana"
+                sx={{ height: "100%", objectFit: "cover" }}
+              />
           </Card>
         </Grid>
       </Grid>

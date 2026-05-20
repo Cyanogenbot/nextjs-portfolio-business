@@ -20,7 +20,7 @@ const OverlayButton = styled(IconButton)({
 
 const Welcome = () => {
   const [videoQueue, setVideoQueue] = useState([
-    "/videos/Ringringremakeh264.mp4",
+    // "/videos/Ringringremakeh264.mp4",
     "/videos/rideswipe.mp4",
     "/videos/Duietfinalvideo.mp4",
     "/videos/polaris.mp4",

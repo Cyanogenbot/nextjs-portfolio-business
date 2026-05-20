@@ -1,0 +1,8 @@
+title: User & Society
+url: /images/claudesociety.jpg
+
+In my bachelors, I would often forget the society aspect of this expertise area. But this during the master this was a major area of development for me. Especially through the course Interactional Morality I started to realise the importance of positioning a design within a societal context. As a person I am quite opinionated, but often these would be kept to myself. This course helped me discover how I could express these opinions in a non verbal way through design, similarly to the bachelors course, perspectives on aesthetics.
+
+Whereas I have always had the urge to tackle societal problems such as sustainability, This would often come as an additional value. In my bachelors this meant that I would design something first, and then make it sustainable. This would lead to paradoxical designs that were inherently unsustainable but executed Sustainably, essentially commodifying sustainability. I learnt that to tackle societal problems, you have to address these problems throughout the entire development cycle. This way sustainable values will not only be embedded in the design but also reflected by the concept. This approach aligns with the idea of privacy by design, which tries to embed privacy throughout the entire process instead of making a concept private.
+
+Not only did I discuss the societal relevance of privacy in the Claude project, as my project also looked into further ethical explorations caused by private file-sharing and communication. Namely the complex topic of CASM, and the distribution of illegal files. As I have talked with two experts on this topic to figure out how I could take a stance on the matter

@@ -1,65 +1,94 @@
 #root {
-    background: lightblue;
-    position: fixed;
-    min-width: 27vw;
-    height: 100%;
-    cursor: url('https://uploads.codesandbox.io/uploads/user/b3e56831-8b98-4fee-b941-0e27f39883ab/Ad1_-cursor.png') 39 39, auto;
+  background: lightblue;
+  position: fixed;
+  min-width: 27vw;
+  height: 100%;
+  cursor: url("https://uploads.codesandbox.io/uploads/user/b3e56831-8b98-4fee-b941-0e27f39883ab/Ad1_-cursor.png")
+      39 39,
+    auto;
 }
 
 .no {
-    position: absolute;
-    margin-top: 170px;
-    margin-left: -10px;
-    padding: 0;
-    will-change: transform;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
+  position: absolute;
+  margin-top: 170px;
+  margin-left: -10px;
+  padding: 0;
+  will-change: transform;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .yes {
-    background-color: white;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    width: 290px;
-    height: 380px;
-    will-change: transform;
-    border-radius: 15px;
-    box-shadow: 0 12.5px 100px -10px rgba(50, 50, 73, 0.3), 0 10px 10px -10px rgba(50, 50, 73, 0.2);
-    overflow: hidden;
+  background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 290px;
+  height: 380px;
+  will-change: transform;
+  border-radius: 15px;
+  //box-shadow: 0 12.5px 100px -10px rgba(50, 50, 73, 0.3), 0 10px 10px -10px rgba(50, 50, 73, 0.2);
+  overflow: hidden;
 }
 
 @media (min-width: 768px) {
-.no {
-        margin-top: 30px;
-    }
+  .no {
+    margin-top: 0;
+    top: 5%;
+    margin-left: -50px;
+  }
 
-    .yes {
-        width: 23.5rem;
-        height: 33rem;
-    }
+  .yes {
+    width: 23.5rem;
+    height: 35rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .no {
+    margin-top: 0;
+    top: 6%;
+    margin-left: -50px;
+  }
+
+  .yes {
+    width: 28rem;
+    height: 42rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .no {
+    margin-top: 0;
+    top: 0%;
+    margin-left: -20px;
+  }
+
+  .yes {
+    width: 32rem;
+    height: 48rem;
+  }
 }
 
 @media (max-width: 767px) {
-    .no {
-        margin-left: -15px;
-    }
+  .no {
+    margin-left: -15px;
+  }
 
-    .yes {
-        box-shadow: none;
-        width: calc(100vw - 20px);
-        max-width: 290px;
-    }
+  .yes {
+    box-shadow: none;
+    width: calc(100vw - 20px);
+    max-width: 290px;
+    height: 440px;
+  }
 }
 
-
-
 .cardDescription {
-    padding: 2rem 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    box-sizing: border-box;
-    overflow-y: auto;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  overflow-y: auto;
 }

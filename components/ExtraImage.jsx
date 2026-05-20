@@ -15,10 +15,12 @@ const EnlargedCardMedia = styled(CardMedia)(({ enlarge }) => ({
   position: enlarge ? "fixed" : "initial",
   top: enlarge ? "50%" : "auto",
   left: enlarge ? "50%" : "auto",
-  width: enlarge ? "80vw" : "initial",
-  height: enlarge ? "80vh" : "initial",
+  width: enlarge ? "60vw" : "initial",
+  height: enlarge ? "60vh" : "100%",
   transform: enlarge ? "translate(-50%, -50%)" : "none",
-  maxWidth: "100%",
+  maxWidth: "90vw",
+  maxHeight: "90vh",
+  objectFit: enlarge ? "cover" : "cover",
 }));
 
 const BackgroundOverlay = styled(Box)(({ show }) => ({
@@ -64,7 +66,7 @@ export default function ExtraImage(props) {
           alt="green iguana"
           enlarge={enlarged ? 1 : 0}
           onClick={handleClick}
-          sx={{ width: "100%", height: "auto" }}
+          sx={{ width: "100%", height: "100%" }}
         />
       </Card>
       <Container>
