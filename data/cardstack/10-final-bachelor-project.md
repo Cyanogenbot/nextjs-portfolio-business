@@ -1,4 +1,5 @@
 title: Final Bachelor Project
+year:2022
 url: /images/Sphere.png
 
 In the future, our houses will be smarter than ever. As innovative home products will start to lead their own lives, appliances might initiate actions just by sensing human presence. But how  do  we  as  humans  stay  in  control of these intelligent homes? Sphere  allows  users  to  indicate  to  their  smart  appliances  how  much  they  want  to  be  interacted  with.  It  does this by letting users set ranges for intelligent de-vices  and  letting  them  adjust  their  range  throughout  the  day.  By  doing  so  you  stay  in  control  of  your  safe  space, without having to sacrifice smart functionality. To indicate how much you want to be interacted with you pick up the sphere device and set your own sphere of influence by pulling the cord. To change to what degree smart device can see you, you magnetically dock your sphere to the device in question and pull the cord to the distance it is allowed to see you. This way your smart  home  devices  won't  respond  to  your  presence  when you don't want it to happen!

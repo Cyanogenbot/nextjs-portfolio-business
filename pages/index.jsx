@@ -23,7 +23,7 @@ const identity = {
     <>
       <p>
         {
-          "I'm Diede, an EngD candidate in Human-Systems Interaction at TU/e and an industrial designer with a deep interest in the relationship between technology and society. My work sits at the intersection of design research and creative technology as I build novel concepts, prototypes, and experiences that bring abstract futures into the room. But I also use design as a tool to gain a better understanding of the design context by utilizing Research-Through-Design methods."
+          "I'm Diede, an EngD candidate in Human-Systems Interaction at TU/e and an industrial designer with a deep interest in the relationship between technology and society. My work sits at the intersection of design research and creative technology as I build novel concepts, prototypes, and experiences that bring abstract futures into reality. But I also use design as a tool to gain a better understanding of the design context by utilizing Research-Through-Design methods."
         }
       </p>
       <p>
@@ -60,7 +60,7 @@ const vision = {
       </p>
       <p>
         {
-          "But the bigger idea is this: what if we applied that same logic to other contexts? Sustainable-by-design. Equal-by-design. As designers, we should be innovating from social values like privacy, sustainability, and equality rather than innovating for the sake of technology or growth. That would lead to truly disruptive work."
+          "But the bigger idea is this: what if we applied that same logic to other contexts? Sustainable-by-design. Equal-by-design. As designers, we should be innovating from social values like privacy, sustainability, and equality rather than innovating for the sake of technology or growth."
         }
       </p>
     </>
@@ -114,15 +114,16 @@ const latestProject = {
     <>
       <p>
         {
-          "We are dependent on big tech companies. Day in day out we are using services by Microsoft, Google, Meta, Apple, and Amazon. While we have to use their services to live our comfortable western lifestyle, they have perfected creating intricate digital profiles which are sold to the highest bidder. These profiles are so detailed, that these companies can almost assure their clients they can nudge your behavior, Influence what you buy or determine an entire election. And we don't seem to have a choice"
+          "We are dependent on big tech companies. Day in day out we are using services by Microsoft, Google, Meta, Apple, and Amazon. While we have to use their services to live our comfortable western lifestyle, they have perfected creating intricate digital profiles which are sold to the highest bidder. These profiles are so detailed, that these companies can almost assure their clients they can nudge your behavior, Influence what you buy or determine an entire election. And we don't seem to have a choice."
         }
       </p>
 
       <p>
         {
-          "In my project Claude (not related to anthropic), I aim to reshape the future of the home server by adapting it to suit the decentralized internet, but this time putting privacy at center. This is done by drawing inspiration from the self-hosting community, a community of people that have been developing and hosting alternatives to big tech companies. Claude creates personal little clouds that can be hosted at home. Giving back control into the hands of the people who want to preserve their digital privacy through data-sovereignty."
+          "In my project Claude, I aim to reshape the future of the home server by adapting it to suit the decentralized internet, but this time putting privacy at center. This is done by drawing inspiration from the self-hosting community, a community of people that have been developing and hosting alternatives to big tech companies. Claude creates personal little clouds that can be hosted at home. Giving back control into the hands of the people who want to preserve their digital privacy through data-sovereignty."
         }
       </p>
+
       <p>
         {
           "This was done through 2 co-creation session to figure out how users would envision the concept of a personal home server. After which an auto-ethnographic study was held into figuring out what kind of architecture would be desired based on these home server concepts after which the concept was refined and validated with six experts and five students. The concept consists of two elements, the Claude portal; a home server on which users can store and share their data and the Claude wallet; a key wallet to manage access to your or your friends' their servers."
@@ -182,20 +183,27 @@ export default function Home({ cards, cardsReverse }) {
         title={identity.title}
         content={identity.content}
         image={identity.image}
+        alt="Me Smiling"
         image2={identity.image2}
+        alt2="Diede at work building"
         image3={identity.image3}
+        alt3="Diede at work photographing"
         caption={identity.caption}
       />
 
       <div id="Projects" />
       <Buffertext id="Projects" text="What kind of projects have you done?" />
       <Deck cards={cards} />
+      <Buffer />
       <PIVMirror3
         title={latestProject.title}
         content={latestProject.content}
         image={latestProject.image}
+        alt="Claude homeserver"
         image2={latestProject.image2}
+        alt2="Shared Gallery Interface"
         image3={latestProject.image3}
+        alt3="Explanation on Claude Sharing"
         caption={latestProject.caption}
       />
 
@@ -217,8 +225,11 @@ export default function Home({ cards, cardsReverse }) {
         title={vision.title}
         content={vision.content}
         image={vision.image}
+        alt1="A Phone under repair"
         image2={vision.image2}
+        alt2="A Homeserver with a plant on top"
         image3={vision.image3}
+        alt3="Homeserver dashboard"
         caption={vision.caption}
       />
 

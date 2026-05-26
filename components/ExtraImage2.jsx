@@ -83,17 +83,19 @@ export default function ExtraImage(props) {
               bgcolor: "background.cards",
               display: "flex",
               alignItems: "center",
+              overflow: "hidden",
+              height: "380px",
             }}
           >
-<EnlargedCardMedia
-                component="img"
-                image={props.image}
-                alt="green iguana"
-                enlarge={enlargedImage === "image" ? 1 : 0}
-                aspectratio={aspectratios["image"] || 1}
-                onClick={() => handleClick("image")}
-                sx={{ width: "100%", height: "100%" }}
-              />
+            <EnlargedCardMedia
+              component="img"
+              image={props.image}
+              alt={props.alt || "image"}
+              enlarge={enlargedImage === "image" ? 1 : 0}
+              aspectratio={aspectratios["image"] || 1}
+              onClick={() => handleClick("image")}
+              sx={{ width: "100%", height: "100%", objectFit: "cover" }}
+            />
           </Card>
         </Grid>
         <Grid item>
@@ -126,7 +128,7 @@ export default function ExtraImage(props) {
                 <EnlargedCardMedia
                   component="img"
                   image={props.image2}
-                  alt="green iguana"
+                  alt={props.alt2 || "image"}
                   enlarge={enlargedImage === "image2" ? 1 : 0}
                   aspectratio={aspectratios["image2"] || 1}
                   onClick={() => handleClick("image2")}
@@ -149,7 +151,7 @@ export default function ExtraImage(props) {
                 <EnlargedCardMedia
                   component="img"
                   image={props.image3}
-                  alt="green iguana"
+                  alt={props.alt3 || "image"}
                   enlarge={enlargedImage === "image3" ? 1 : 0}
                   aspectratio={aspectratios["image3"] || 1}
                   onClick={() => handleClick("image3")}

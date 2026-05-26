@@ -7,6 +7,7 @@ function parseMdFile(filePath) {
 
   let title = "";
   let url = "";
+  let year = "";
   let hidden = false;
   let bodyStartIndex = 0;
 
@@ -16,6 +17,8 @@ function parseMdFile(filePath) {
     } else if (lines[i].startsWith("url:")) {
       url = lines[i].replace("url:", "").trim();
       bodyStartIndex = i + 1;
+    } else if (lines[i].startsWith("year:")) {
+      year = lines[i].replace("year:", "").trim();
     } else if (lines[i].startsWith("hidden:")) {
       const val = lines[i].replace("hidden:", "").trim().toLowerCase();
       hidden = val === "true" || val === "yes";
@@ -27,6 +30,7 @@ function parseMdFile(filePath) {
   return {
     title,
     URL: url,
+    year,
     description: body,
     hidden,
   };

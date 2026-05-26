@@ -1,4 +1,5 @@
-title: Claude
+title: Claude 
+year: 2024
 url: /images/Claude.jpg
 
 The Claude Project is a decentralized home-server initiative reshaping personal computing for the privacy-conscious digital future. Drawing inspiration from the self-hosting community, it adapts home servers to the decentralized internet by placing user privacy at the center, offering open-source alternatives to Big Tech services.

@@ -67,16 +67,25 @@ function Description({ cards, count, onOverflowChange }) {
   return (
     <Grid container sx={{ height: "575px", display: "flex", flexDirection: "column" }}>
       <Grid item>
-        <Typography
+        <Box
           component="h1"
-          variant="h3"
-          color="black"
-          paddingTop="4vw"
-          paddingLeft="5vw"
-          gutterBottom
+          sx={{
+            fontSize: "3.5rem",
+            fontWeight: 700,
+            color: "black",
+            paddingTop: "1rem",
+            paddingLeft: "5vw",
+            display: "flex",
+            alignItems: "baseline",
+            gap: "0.5rem",
+            flexWrap: "wrap",
+          }}
         >
-          {cards[count].title}
-        </Typography>
+          <span style={{ fontFamily: "quincy-cf" }}>{cards[count].title}</span>
+          {cards[count].year && (
+            <span style={{ fontSize: "1rem", fontWeight: 400, color: "grey" }}>{cards[count].year}</span>
+          )}
+        </Box>
       </Grid>
       <Grid item sx={{ position: "relative", flex: 1, minHeight: 0 }}>
         <Box

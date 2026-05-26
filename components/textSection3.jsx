@@ -14,6 +14,9 @@ export default function textSection(props) {
           image2={props.image2}
           image3={props.image3}
           caption={props.caption}
+          alt={props.alt}
+          alt2={props.alt2}
+          alt3={props.alt3}
         />
       </Grid>
     </Grid>
