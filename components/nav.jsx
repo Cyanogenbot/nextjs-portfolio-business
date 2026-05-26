@@ -102,7 +102,9 @@ export default function Nav(props) {
                 color="white"
                 sx={{
                   color: "#fff",
-                  fontSize: { xs: "1rem", md: "1.25rem" },
+                  fontSize: "1.25rem",
+                  fontWeight: "700",
+                  lineHeight: 1,
                   fontFamily: "'Space Mono', monospace",
                 }}
               >

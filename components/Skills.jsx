@@ -2,7 +2,7 @@ import * as React from "react";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import utilStyles from "../styles/utils.module.css";
-import Grid from "@mui/material/Grid";
+import Box from "@mui/material/Box";
 import styled from "styled-components";
 import {
   Adobeillustrator,
@@ -14,76 +14,95 @@ import {
   Nextdotjs,
   Processingfoundation,
   Python,
+  Figma,
 } from "styled-icons/simple-icons";
 
 const Illust = styled(Adobeillustrator)`
   color: #212121;
-  height: clamp(44px, 8vw, 100px);
-  margin: clamp(8px, 1vw, 16px);
+  height: clamp(36px, 6vw, 120px);
+  margin: 0;
+  transition: color 0.2s;
   &:hover {
     color: #cfe8fc;
   }
 `;
 const Indesign = styled(Adobeindesign)`
   color: #212121;
-  height: clamp(44px, 8vw, 100px);
-  margin: clamp(8px, 1vw, 16px);
+  height: clamp(36px, 6vw, 120px);
+  margin: 0;
+  transition: color 0.2s;
   &:hover {
     color: #cfe8fc;
   }
 `;
 const Photoshop = styled(Adobephotoshop)`
   color: #212121;
-  height: clamp(44px, 8vw, 100px);
-  margin: clamp(8px, 1vw, 16px);
+  height: clamp(36px, 6vw, 120px);
+  margin: 0;
+  transition: color 0.2s;
   &:hover {
     color: #cfe8fc;
   }
 `;
 const BlenderI = styled(Blender)`
   color: #212121;
-  height: clamp(44px, 8vw, 100px);
-  margin: clamp(8px, 1vw, 16px);
+  height: clamp(36px, 6vw, 120px);
+  margin: 0;
+  transition: color 0.2s;
   &:hover {
     color: #cfe8fc;
   }
 `;
 const Arduino = styled(Cplusplus)`
   color: #212121;
-  height: clamp(44px, 8vw, 100px);
-  margin: clamp(8px, 1vw, 16px);
+  height: clamp(36px, 6vw, 120px);
+  margin: 0;
+  transition: color 0.2s;
   &:hover {
     color: #cfe8fc;
   }
 `;
 const PythonI = styled(Python)`
   color: #212121;
-  height: clamp(44px, 8vw, 100px);
-  margin: clamp(8px, 1vw, 16px);
+  height: clamp(36px, 6vw, 120px);
+  margin: 0;
+  transition: color 0.2s;
   &:hover {
     color: #cfe8fc;
   }
 `;
 const Processing = styled(Processingfoundation)`
   color: #212121;
-  height: clamp(44px, 8vw, 100px);
-  margin: clamp(8px, 1vw, 16px);
+  height: clamp(36px, 6vw, 120px);
+  margin: 0;
+  transition: color 0.2s;
   &:hover {
     color: #cfe8fc;
   }
 `;
 const NextjsI = styled(Nextdotjs)`
   color: #212121;
-  height: clamp(44px, 8vw, 100px);
-  margin: clamp(8px, 1vw, 16px);
+  height: clamp(36px, 6vw, 120px);
+  margin: 0;
+  transition: color 0.2s;
   &:hover {
     color: #cfe8fc;
   }
 `;
 const Lightroom = styled(Adobelightroom)`
   color: #212121;
-  height: clamp(44px, 8vw, 100px);
-  margin: clamp(8px, 1vw, 16px);
+  height: clamp(36px, 6vw, 120px);
+  margin: 0;
+  transition: color 0.2s;
+  &:hover {
+    color: #cfe8fc;
+  }
+`;
+const FigmaI = styled(Figma)`
+  color: #212121;
+  height: clamp(36px, 6vw, 120px);
+  margin: 0;
+  transition: color 0.2s;
   &:hover {
     color: #cfe8fc;
   }
@@ -102,42 +121,77 @@ export default function Buffertext(props) {
           {"Some of my software hard-skills:"}
         </Typography>
 
-        <Grid
-          marginTop={{ xs: "1rem", md: "2vh" }}
-          marginBottom={{ xs: "2rem", md: "10vh" }}
-          container
-          direction="row"
-          spacing={1}
-          justifyContent="center"
+        <Box
+          sx={{
+            marginTop: { xs: "1rem", md: "2vh" },
+            marginBottom: { xs: "2rem", md: "4vh" },
+            display: "flex",
+            flexWrap: "nowrap",
+            gap: "clamp(8px, 2vw, 32px)",
+            justifyContent: "center",
+          }}
         >
-          <Grid item xs={1} md={1}>
+          <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center", padding: "2px", "&:hover .pill": { opacity: 1 } }}>
             <Illust />
-          </Grid>
-          <Grid item xs={1} md={1}>
+            <Typography variant="caption" className="pill" sx={{ opacity: 0, transition: "opacity 0.2s", fontSize: "clamp(0.5rem, 1.2vw, 0.85rem)", color: "#cfe8fc", mt: "clamp(0.25rem, 1vw, 0.75rem)" }}>
+              Illustrator
+            </Typography>
+          </Box>
+          <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center", padding: "2px", "&:hover .pill": { opacity: 1 } }}>
             <Indesign />
-          </Grid>
-          <Grid item xs={1} md={1}>
+            <Typography variant="caption" className="pill" sx={{ opacity: 0, transition: "opacity 0.2s", fontSize: "clamp(0.5rem, 1.2vw, 0.85rem)", color: "#cfe8fc", mt: "clamp(0.25rem, 1vw, 0.75rem)" }}>
+              InDesign
+            </Typography>
+          </Box>
+          <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center", padding: "2px", "&:hover .pill": { opacity: 1 } }}>
             <Photoshop />
-          </Grid>
-          <Grid item xs={1} md={1}>
+            <Typography variant="caption" className="pill" sx={{ opacity: 0, transition: "opacity 0.2s", fontSize: "clamp(0.5rem, 1.2vw, 0.85rem)", color: "#cfe8fc", mt: "clamp(0.25rem, 1vw, 0.75rem)" }}>
+              Photoshop
+            </Typography>
+          </Box>
+          <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center", padding: "2px", "&:hover .pill": { opacity: 1 } }}>
             <Lightroom />
-          </Grid>
-          <Grid item xs={1} md={1}>
+            <Typography variant="caption" className="pill" sx={{ opacity: 0, transition: "opacity 0.2s", fontSize: "clamp(0.5rem, 1.2vw, 0.85rem)", color: "#cfe8fc", mt: "clamp(0.25rem, 1vw, 0.75rem)" }}>
+              Lightroom
+            </Typography>
+          </Box>
+          <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center", padding: "2px", "&:hover .pill": { opacity: 1 } }}>
             <BlenderI />
-          </Grid>
-          <Grid item xs={1} md={1}>
+            <Typography variant="caption" className="pill" sx={{ opacity: 0, transition: "opacity 0.2s", fontSize: "clamp(0.5rem, 1.2vw, 0.85rem)", color: "#cfe8fc", mt: "clamp(0.25rem, 1vw, 0.75rem)" }}>
+              Blender
+            </Typography>
+          </Box>
+          <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center", padding: "2px", "&:hover .pill": { opacity: 1 } }}>
             <Arduino />
-          </Grid>
-          <Grid item xs={1} md={1}>
+            <Typography variant="caption" className="pill" sx={{ opacity: 0, transition: "opacity 0.2s", fontSize: "clamp(0.5rem, 1.2vw, 0.85rem)", color: "#cfe8fc", mt: "clamp(0.25rem, 1vw, 0.75rem)" }}>
+              Arduino
+            </Typography>
+          </Box>
+          <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center", padding: "2px", "&:hover .pill": { opacity: 1 } }}>
             <PythonI />
-          </Grid>
-          <Grid item xs={1} md={1}>
+            <Typography variant="caption" className="pill" sx={{ opacity: 0, transition: "opacity 0.2s", fontSize: "clamp(0.5rem, 1.2vw, 0.85rem)", color: "#cfe8fc", mt: "clamp(0.25rem, 1vw, 0.75rem)" }}>
+              Python
+            </Typography>
+          </Box>
+          <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center", padding: "2px", "&:hover .pill": { opacity: 1 } }}>
             <Processing />
-          </Grid>
-          <Grid item xs={1} md={1}>
+            <Typography variant="caption" className="pill" sx={{ opacity: 0, transition: "opacity 0.2s", fontSize: "clamp(0.5rem, 1.2vw, 0.85rem)", color: "#cfe8fc", mt: "clamp(0.25rem, 1vw, 0.75rem)" }}>
+              Processing
+            </Typography>
+          </Box>
+          <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center", padding: "2px", "&:hover .pill": { opacity: 1 } }}>
             <NextjsI />
-          </Grid>
-        </Grid>
+            <Typography variant="caption" className="pill" sx={{ opacity: 0, transition: "opacity 0.2s", fontSize: "clamp(0.5rem, 1.2vw, 0.85rem)", color: "#cfe8fc", mt: "clamp(0.25rem, 1vw, 0.75rem)" }}>
+              Next.js
+            </Typography>
+          </Box>
+          <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center", padding: "2px", "&:hover .pill": { opacity: 1 } }}>
+            <FigmaI />
+            <Typography variant="caption" className="pill" sx={{ opacity: 0, transition: "opacity 0.2s", fontSize: "clamp(0.5rem, 1.2vw, 0.85rem)", color: "#cfe8fc", mt: "clamp(0.25rem, 1vw, 0.75rem)" }}>
+              Figma
+            </Typography>
+          </Box>
+        </Box>
       </Container>
     </section>
   );

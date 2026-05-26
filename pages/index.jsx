@@ -254,8 +254,8 @@ export default function Home({ cards, cardsReverse }) {
 
       <div id="Contact" />
       <Bufferlink
-        text="Do you want work together on a better world? Click me and Let's get in touch!"
-        link="mailto: contact@designedbydie.de"
+        text="Do you want work together on a better world? Click me and let's get in touch!"
+        link="mailto: contact@email.voordie.de"
       />
       <a rel="me" href="https://mastodon.voordie.de/@diedeboef">
         Mastodon
