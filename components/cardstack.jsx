@@ -48,7 +48,8 @@ function Description({ cards, count, onOverflowChange }) {
     if (el) {
       el.scrollTop = 0;
       setShowPill(true);
-      const hasOverflow = el.scrollHeight > el.clientHeight;
+      const lastChild = el.lastElementChild;
+      const hasOverflow = lastChild ? lastChild.getBoundingClientRect().bottom > el.getBoundingClientRect().bottom + 2 : false;
       setIsOverflowing(hasOverflow);
       if (onOverflowChange) {
         onOverflowChange(hasOverflow);
