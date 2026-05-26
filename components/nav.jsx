@@ -18,12 +18,12 @@ import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 
 const pages = [
-  "Home",
-  "Projects",
+  // "Home",
   "Identity",
+  "Projects",
   "Vision",
-  "Development",
-  "Future",
+  // "Development",
+  // "Future",
 ];
 
 function ElevationScroll(props) {
@@ -46,9 +46,20 @@ function PageButtons({ router }) {
       key={page}
       color="background"
       onClick={() => router.push(`/#${page}`)}
-      sx={{ display: { xs: "none", md: "flex" }, padding: 0, minHeight: "auto", textTransform: "none" }}
+      sx={{
+        display: { xs: "none", md: "flex" },
+        padding: 0,
+        minHeight: "auto",
+        textTransform: "none",
+      }}
     >
-      <Typography variant="h7" component="h1" color="white" textAlign="center" sx={{ lineHeight: 1 }}>
+      <Typography
+        variant="h7"
+        component="h1"
+        color="white"
+        textAlign="center"
+        sx={{ lineHeight: 1 }}
+      >
         {page}
       </Typography>
     </Button>
@@ -81,38 +92,48 @@ export default function Nav(props) {
             zIndex: 900,
           }}
         >
-<Toolbar sx={{ py: { xs: 1, md: 0.5 }, px: { xs: 2, md: 4 } }}>
-             <Box sx={{ display: { xs: "flex", md: "none" }, flexGrow: 1 }}>
-               <Typography
-                 className={navStyles.title}
-                 variant="h6"
-                 component="h5"
-                 color="white"
-sx={{ color: "#fff", fontSize: { xs: "1rem", md: "1.25rem" }, fontFamily: "'Space Mono', monospace" }}
-                >
-                  {"Diede's portfolio"}
-                </Typography>
-              </Box>
+          <Toolbar sx={{ py: { xs: 1, md: 0.5 }, px: { xs: 2, md: 4 } }}>
+            <Box sx={{ display: { xs: "flex", md: "none" }, flexGrow: 1 }}>
+              <Typography
+                className={navStyles.title}
+                variant="h6"
+                component="h5"
+                color="white"
+                sx={{
+                  color: "#fff",
+                  fontSize: { xs: "1rem", md: "1.25rem" },
+                  fontFamily: "'Space Mono', monospace",
+                }}
+              >
+                {"Diede's portfolio"}
+              </Typography>
+            </Box>
 
-             <Box
-               sx={{
-                 display: { xs: "none", md: "flex" },
-                 gap: "1.5rem",
-                 alignItems: "flex-end",
-                 flexGrow: 1,
-               }}
-             >
-               <Typography
-                 className={navStyles.title}
-                 variant="h6"
-                 component="h5"
-                 color="white"
-sx={{ color: "#fff", fontSize: { xs: "1rem", md: "1.25rem" }, fontWeight: "700", lineHeight: 1, fontFamily: "'Space Mono', monospace" }}
-                >
-                  {"Diede's portfolio"}
-                </Typography>
-                <PageButtons router={router} />
-              </Box>
+            <Box
+              sx={{
+                display: { xs: "none", md: "flex" },
+                gap: "1.5rem",
+                alignItems: "flex-end",
+                flexGrow: 1,
+              }}
+            >
+              <Typography
+                className={navStyles.title}
+                variant="h6"
+                component="h5"
+                color="white"
+                sx={{
+                  color: "#fff",
+                  fontSize: { xs: "1rem", md: "1.25rem" },
+                  fontWeight: "700",
+                  lineHeight: 1,
+                  fontFamily: "'Space Mono', monospace",
+                }}
+              >
+                {"Diede's portfolio"}
+              </Typography>
+              <PageButtons router={router} />
+            </Box>
 
             <Box sx={{ display: { xs: "flex", md: "none" } }}>
               <IconButton
@@ -138,7 +159,9 @@ sx={{ color: "#fff", fontSize: { xs: "1rem", md: "1.25rem" }, fontWeight: "700",
                       handleCloseNavMenu();
                     }}
                   >
-                    <Typography textAlign="center" color="white">{page}</Typography>
+                    <Typography textAlign="center" color="white">
+                      {page}
+                    </Typography>
                   </MenuItem>
                 ))}
               </Menu>

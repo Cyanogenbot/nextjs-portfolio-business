@@ -33,7 +33,7 @@ const identity = {
       </p>
       <p>
         {
-          "The domains that I primarily work within are privacy-by-design, slow technology, and sustainability. Not as buzzwords, but as the values that shape my decision making."
+          "The domains that I primarily work within are privacy-by-design, slow technology, and sustainability. Not as buzzwords, but as the values that shape my decision-making. I've been formally trained with the KEMs, design methods for profesionals which allow me to dissect and contribute to complex societal challenges and deal with ambiguous situations."
         }
       </p>
     </>
@@ -123,10 +123,15 @@ const latestProject = {
           "In my project Claude, I aim to reshape the future of the home server by adapting it to suit the decentralized internet, but this time putting privacy at center. This is done by drawing inspiration from the self-hosting community, a community of people that have been developing and hosting alternatives to big tech companies. Claude creates personal little clouds that can be hosted at home. Giving back control into the hands of the people who want to preserve their digital privacy through data-sovereignty."
         }
       </p>
-
+      {/*
       <p>
         {
-          "This was done through 2 co-creation session to figure out how users would envision the concept of a personal home server. After which an auto-ethnographic study was held into figuring out what kind of architecture would be desired based on these home server concepts after which the concept was refined and validated with six experts and five students. The concept consists of two elements, the Claude portal; a home server on which users can store and share their data and the Claude wallet; a key wallet to manage access to your or your friends' their servers."
+          "This was done through 2 co-creation sessions to figure out how users would envision the concept of a personal home server. After which an auto-ethnographic study was held into figuring out what kind of architecture would be desired based on these home server concepts after which the concept was refined and validated with six experts and five students. The concept consists of two elements, the Claude portal; a home server on which users can store and share their data and the Claude wallet; a key wallet to manage access to your or your friends' their servers."
+        }
+      </p>*/}
+      <p>
+        {
+          "Through an autoetnographic approach combined with expert interviews and a co-creation session I created a homeserver concept which put the users privacy first. It does this through a more personal approach to selfhosting architecture, which does not require personal services to be opened to the public web. This Architecture was then validated in another round of expert interviews. In the end I deliverd a well-rounded homeserver concept. The concept consists of two elements, the Claude portal; a home server and the Claude wallet; a key wallet to manage access to your or your friends' their servers. The whole project concept was then presented on the Nextcloud community days on invitation of Nextcloud."
         }
       </p>
     </>
@@ -178,7 +183,7 @@ export default function Home({ cards, cardsReverse }) {
       <Slidesjow sx={{ width: "100vw" }} />
 
       <div id="Identity" />
-      <Buffertext text="Hi I'm Diede! A Human-Systems Interaction EngD candidate at TU/e" />
+      <Buffertext text="Hi I'm Diede! A Human-Systems Interaction EngD candidate at Eindhoven University of Technology" />
       <PIV3
         title={identity.title}
         content={identity.content}
