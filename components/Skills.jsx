@@ -127,7 +127,7 @@ export default function Buffertext(props) {
             marginBottom: { xs: "2rem", md: "4vh" },
             display: "flex",
             flexWrap: "nowrap",
-            gap: "clamp(8px, 2vw, 32px)",
+            gap: "clamp(4px, 1.2vw, 18px)",
             justifyContent: "center",
           }}
         >
