@@ -131,7 +131,7 @@ const latestProject = {
       </p>
     </>
   ),
-  image: "/images/claude.jpg",
+  image: "/images/Claude.jpg",
   image2: "/images/claudeApp.png",
   image3: "/images/claudedev.jpg",
   caption: <p></p>,
