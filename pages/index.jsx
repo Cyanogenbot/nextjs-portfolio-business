@@ -252,8 +252,9 @@ export default function Home({ cards, cardsReverse }) {
         caption={future.caption}
       />*/}
 
+      <div id="Contact" />
       <Bufferlink
-        text="Want to be part of my future? Contact me!"
+        text="Do you want work together on a better world? Click me and Let's get in touch!"
         link="mailto: contact@designedbydie.de"
       />
       <a rel="me" href="https://mastodon.voordie.de/@diedeboef">

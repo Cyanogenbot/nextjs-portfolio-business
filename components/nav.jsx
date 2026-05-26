@@ -22,6 +22,7 @@ const pages = [
   "Identity",
   "Projects",
   "Vision",
+  "Contact",
   // "Development",
   // "Future",
 ];
