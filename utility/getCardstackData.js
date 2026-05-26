@@ -37,7 +37,7 @@ function parseMdFile(filePath) {
 }
 
 function getCards(folder) {
-  const dir = path.join(process.cwd(), "data", folder);
+  const dir = path.resolve(__dirname, "../data", folder);
   const files = fs
     .readdirSync(dir)
     .filter((f) => f.endsWith(".md"))
