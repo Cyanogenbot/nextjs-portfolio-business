@@ -73,7 +73,7 @@ function parseSectionFile(filePath) {
 }
 
 function getSections() {
-  const dir = path.resolve(__dirname, "../data/sections");
+  const dir = path.join(process.cwd(), "data", "sections");
   const files = fs
     .readdirSync(dir)
     .filter((f) => f.endsWith(".md"))
